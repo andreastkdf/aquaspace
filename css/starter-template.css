@@ -50,7 +50,7 @@ body {
 }
 
 #logo_small {
-	position: fixed;
+	position: absolute;
 	margin: 1.5% 0 0 82%;
 	width: 15%;
 	display: none;
@@ -107,7 +107,7 @@ body {
 	padding-top: 26%;
 	display: none;
 }
- #textSlide2{
+#textSlide2{
 	font-family: "futuragreekbk";	
 	text-align: left;
 	font-size: 145%;
@@ -115,17 +115,26 @@ body {
 	display: none;
 }
 
+
+.endIntro{	
+    margin: 0% 0 0% -49%;
+    display: none;
+    padding-top: 1%;
+    position: absolute;
+}
+
+
 .carousel-control {
-position: absolute;
-top: 50%; /* pushes the icon in the middle of the height */
-z-index: 5;
-display: inline-block;
+	position: absolute;
+	top: 50%; /* pushes the icon in the middle of the height */
+	z-index: 5;
+	display: inline-block;
 }
 
 .carousel-control-prev-icon {
-    background-image: url(../img/arrowPrev.png);
+	background-image: url(../img/arrowPrev.png);
 }
 
 .carousel-control-next-icon {
-    background-image: url(../img/arrowNext.png);
+	background-image: url(../img/arrowNext.png);
 }

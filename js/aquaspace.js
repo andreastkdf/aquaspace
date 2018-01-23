@@ -37,6 +37,10 @@ $('.carousel').on('slid.bs.carousel', function (evt) {
 
 	if (step == 2){
 		after = 0;
+		$('.carousel-control-next').css('display','none');
+		$('.endIntro').fadeIn('fast');
+	}else{
+		$('.carousel-control-next').css('display','');
 	}
 
 	$(' #textSlide'+before).hide('slow', function() {
