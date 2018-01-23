@@ -1,4 +1,4 @@
-$(document).keypress(function(){
+$("#logo").click(function(){
 	$("#logo").fadeOut('300');
 	$("#logo_small").fadeIn('200');
 	$("#intro").animate({margin:  '38% 0px 0px 0px'},3000, function(){
@@ -13,17 +13,28 @@ $('.carousel').carousel({
 }); 
 
 $('.aquaButton').click(function () {
-	// e.preventDefault();
-	// e.stopPropagation();
-	//alert("?");
-
 	$('.introMenu').fadeOut('slow', function(){;
 		$('.introMenuSlide').css("display","-webkit-box");
 	});
-   
-        // $('.introMenu').hide();
 });
 
+
+$('.endIntro').click(function () {
+	$('.introMenuSlide').fadeOut('slow', function(){
+		$("#intro").attr("src", "./img/welcome_intro.png");
+		$("#intro").animate({margin:  '28% 0px 0px 0px'},1000, function(){
+			$("#intro").css("position: absolute;");
+			$(".start").fadeIn('fast');
+		});
+	});
+});  
+
+$('.start_button').click(function () {
+	$(".go_button").fadeIn('slow', function(){
+		$(".start").fadeOut('fast');
+		$("#intro").animate({margin:  '38% 0px 0px 0px'},1000);
+	});
+});
 
 $('.carousel').on('slid.bs.carousel', function (evt) {
 
