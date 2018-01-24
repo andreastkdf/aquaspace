@@ -1,3 +1,4 @@
+
 $("#logo").click(function(){
 	$("#logo").fadeOut('300');
 	$("#logo_small").fadeIn('200');
