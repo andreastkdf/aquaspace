@@ -138,8 +138,7 @@ body {
 
 
 .start_button{
-		font-family: 'futuragreekmedium';
-
+	font-family: 'futuragreekmedium';
 	padding: 0px 20px;
 	font-size: 116%;
 	color: #fff;
@@ -150,15 +149,15 @@ body {
 .go_button{
 	position: fixed;
 	font-family: 'futuragreekmedium';
-    background-color: #e4a818 !important;
-    padding: 77px 0px 60px 0px;
-    color: #fff;
-    font-size: 185%;
-    margin-left: 26%;
-    margin-top: 18%;
-    border-radius: 10px;
-    width: 45%;
-    display: none;
+	background-color: #e4a818 !important;
+	padding: 77px 0px 60px 0px;
+	color: #fff;
+	font-size: 185%;
+	margin-left: 26%;
+	margin-top: 18%;
+	border-radius: 10px;
+	width: 45%;
+	display: none;
 }
 .carousel-control {
 	position: absolute;
@@ -176,30 +175,55 @@ body {
 }
 
 #overlay{
-  position:fixed;
-  z-index:99999;
-  top:0;
-  left:0;
-  bottom:0;
-  right:0;
-  /*background:rgba(0,0,0,0.9);*/
-  background: #0176ae;
-  transition: 1s 0.4s;
+	position:fixed;
+	z-index:99999;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	/*background:rgba(0,0,0,0.9);*/
+	background: #0176ae;
+	transition: 1s 0.4s;
 }
 #progress{
-  height:1px;
-  background:#fff;
-  position:absolute;
-  width:0;                /* will be increased by JS */
-  top:50%;
+	height:1px;
+	background:#fff;
+	position:absolute;
+	width:0;                /* will be increased by JS */
+	top:50%;
 }
 #progstat{
-  font-size:0.7em;
-  letter-spacing: 3px;
-  position:absolute;
-  top:50%;
-  margin-top:-40px;
-  width:100%;
-  text-align:center;
-  color:#fff;
+	font-size:0.7em;
+	letter-spacing: 3px;
+	position:absolute;
+	top:50%;
+	margin-top:-40px;
+	width:100%;
+	text-align:center;
+	color:#fff;
+}
+
+.categories{
+	padding-top: 12.5%;
+}
+
+.categories-button{
+	font-family: 'futuragreekbk';
+	font-size: 30px;
+	border-radius: 10px;
+	width: 100%;
+	margin-left: 49%;
+	display: inline-block;
+}
+
+.categories-img{
+	margin: 20% 0px 20% 29%;
+	height: 100px;
+	display: block;
+}
+
+.btn-outline-secondary:hover {
+    color: #000;
+    background-color: #c7c8ca;
+    border-color: #c7c8ca;
 }
