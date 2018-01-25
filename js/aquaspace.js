@@ -37,6 +37,12 @@ $('.start_button').click(function () {
 	});
 });
 
+$('.categories-button').click(function () {
+	$(".categories").fadeOut('fast',function(){
+		$("#aqua-tabs").fadeIn('fast');
+	})
+})
+
 $('.carousel').on('slid.bs.carousel', function (evt) {
 
 	var step = $(evt.relatedTarget).index();
