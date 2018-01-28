@@ -64,18 +64,80 @@
       </div>
     </div>
 
-    <div class="aqua-tabs">
-      <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')" >χερσαίες φάρμες</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')" id="defaultOpen">αλιεία</button>
-        <button class="tablinks" onclick="openCity(event, 'Tokyo')" >?</button>
+    <div class="alieia-tabs">
+      <div class="tab alieia">
+        <button class="tablinks sub-alieia" onclick="openCity(event, 'Koina')" id="defaultOpen" >Κοινά αλιεύματα</button>
+        <button class="tablinks sub-alieia" onclick="openCity(event, 'Tropoi')" >Τρόποι αλίευσης</button>
+        <button class="tablinks sub-alieia" onclick="openCity(event, 'Diathesi')" >∆ιάθεση στον καταναλωτή</button>
+        <button class="tablinks sub-alieia" onclick="openCity(event, 'Pleon')" >Πλεονεκτήματα μειονεκτήματα</button>
       </div>
-      <div id="London" class="tabcontent">
+      <div id="Koina" class="tabcontent">
         <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
-        <h3>London</h3>
-        <p>London is the capital city of England.</p>
+        <div class="row sub-categories">
+          <div class="col-md-2">
+            <img class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/gauros.png')"> 
+          </div>
+          <div class="col-md-2">
+            <img id="fish2" class="fish-img fish" src="./img/fish_less_dark.png" onclick="this.src=('./img/lithrini.png')">
+            <!-- <span id="fish2" class="text-fish">λυθρίνι</span> -->
+          </div>
+          <div class="col-md-2">
+            <img id="fish3" class="fish-img fish" src="./img/fish_medium.png" onclick="this.src=('./img/safridi.png')">
+            <!-- <span id="fish3" class="text-fish text-fish3">σαφρίδι</span> -->
+          </div>
+          <div class="col-md-2">
+            <img id="fish9" class="fish-img fish" src="./img/fish_dark.png" onclick="this.src=('./img/gauros.png')">
+            <!-- <span id="fish9" class="text-fish">φρίσσα</span> -->
+          </div>
+        </div>
+        <div class="row sub-categories">
+          <div class="col-md-2">
+            <img id="fish4" class="fish-img fish" src="./img/fish_dark.png" onclick="this.src=('./img/gopa.png')">
+            <!-- <span id="fish4" class="text-fish">γόπα</span> -->
+          </div>
+          <div class="col-md-2">
+            <img id="fish5" class="fish-img fish" src="./img/fish_medium.png" onclick="this.src=('./img/koutsomoura.png')">
+            <!-- <span id="fish5" class="text-fish">κουτσομούρα</span> -->
+          </div>
+          <div class="col-md-2">
+            <img id="fish6" class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/barbouni.png')">
+            <!-- <span id="fish6" class="text-fish">μπαρμπούνι</span> -->
+          </div>
+          <div class="col-md-2">
+            <img id="fish7" class="fish-img fish" src="./img/fish_dark.png" onclick="this.src=('./img/ksifias.png')">
+            <!-- <span id="fish7" class="text-fish">ξιφίας</span> -->
+          </div>
+          <div class="col-md-2">
+            <img id="fish8" class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/glwssa.png')">
+            <!-- <span id="fish8" class="text-fish">γλώσσα</span> -->
+          </div>
+          <div class="col-md-2">
+            <img id="fish10" class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/tonos.png')">
+            <!-- <span id="fish10" class="text-fish text-fish10">τόνος</span> -->
+          </div>
+          <div class="col-md-2">
+            <img id="fish11" class="fish-img fish" src="./img/fish_large.png" onclick="this.src=('./img/kolios.png')">
+            <!-- <span id="fish11" class="text-fish text-fish11">κολιός</span> -->
+          </div>
+          <div class="col-md-2">
+            <img id="fish12" class="fish-img fish" src="./img/fish_less_dark.png" onclick="this.src=('./img/bakaliaros.png')">
+            <!-- <span id="fish12" class="text-fish">μπακαλιάρος</span> -->
+          </div>
+          <div class="col-md-2">
+            <img id="fish13" class="fish-img fish" src="./img/fish_less_dark.png" onclick="this.src=('./img/rofos.png')">
+            <!-- <span id="fish13" class="text-fish">ροφός</span> -->
+          </div>
+          <div class="col-md-2">
+            <img id="fish14" class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/sargos.png')">
+            <!-- <span id="fish14" class="text-fish">σαργός</span> -->
+          </div>
+          <div class="col-md-2">
+            <img id="fish15" class="fish-img fish" src="./img/fish_large.png" onclick="this.src=('./img/xtapodi.png')">
+            <!-- <span id="fish15" class="text-fish text-fish15">χταπόδι</span> -->
+          </div>
+        </div>
       </div>
-      <div id="Paris" class="tabcontent">
+      <div id="Tropoi" class="tabcontent">
         <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
         <div class="row categories">
           <div class="col-md-2">
@@ -100,7 +162,12 @@
         </div>
       </div>
     </div>
-    <div id="Tokyo" class="tabcontent">
+    <div id="Diathesi" class="tabcontent">
+      <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
+      <h3>Tokyo</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+    <div id="Pleon" class="tabcontent">
       <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
       <h3>Tokyo</h3>
       <p>Tokyo is the capital of Japan.</p>

@@ -50,6 +50,12 @@ $('#xersaies_container').click(function () {
 	});
 });
 
+$('#koina_al').click(function(){
+	$("#aqua-tabs").fadeOut('fast',function(){
+		$(".alieia-tabs").fadeIn('fast');
+	});
+});
+
 $('#alieia_container').click(function () {
 	if (next > 0 ){
 		$(".London").removeAttr('id');

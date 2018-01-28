@@ -337,3 +337,100 @@ body {
 	font-size: 24px;
 	text-align: left;
 }
+
+.alieia{
+	padding: 5% 8% 0% 13%;
+}
+
+.sub-alieia{
+	margin-right: 10% !important;
+	width: 12% !important;
+}
+
+#Koina{
+	background-color: #c7c8ca;
+}
+
+.fish{
+	height: 40%;
+}
+
+.fish-img{
+
+	margin: -41% 0px 80% 94%;
+	display: block;
+	height: 36%;
+}
+
+#fish2 {
+	margin-left: 114%;
+	position: absolute;
+	margin-top: -23%;
+}
+
+#fish3{
+	margin: -41% 0px 80% 166%;
+}
+
+#fish4{
+	margin-left: 30%;
+	margin-top: -82%;
+	position: absolute;
+}
+
+#fish5{
+	position: absolute;
+	margin-top: -51%;
+	margin-left: 28%;
+}
+
+#fish6{
+	position: absolute;
+	margin-left: 16%;
+	margin-top: -19%;
+}
+
+#fish7{
+	position: absolute;
+	margin-top: -68%;
+	margin-left: -8%;
+}
+
+#fish8{
+	position: absolute;
+	margin-left: 42%;
+	margin-top: -63%;
+}
+
+#fish9{
+	position: absolute;
+	margin-left: 214%;
+	margin-top: -10%;
+}
+
+#fish10{
+	margin-left: -150%;
+}
+
+#fish11{
+	position: absolute;
+	margin-left: 51%;
+}
+
+#fish12{
+	position: absolute;
+	margin-top: 0%;
+	margin-left: 35%;
+}
+
+#fish13{
+	position: absolute;
+	margin-top: -30%;
+	margin-left: 55%;
+}
+
+#fish14{
+	position: absolute;
+	margin-left: 90%;
+	margin-top: -19%
+}

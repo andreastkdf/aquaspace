@@ -119,7 +119,7 @@
     </span>
     <div class="row sub-categories">
       <div class="col-md-2">
-        <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
+        <button href="#" type="button" id="koina_al" class="btn btn-outline-secondary tab-categories-button">
          Κοινά αλιεύματα<img class="categories-img" src="./img/question.png">
        </button>
      </div>
@@ -141,13 +141,119 @@
   </div>
 </div>
 <div id="Tokyo" class="tabcontent">
-    <span class="topright" onclick="closeTabs3()">
-      <img src="./img/tick.png">
-    </span>
+  <span class="topright" onclick="closeTabs3()">
+    <img src="./img/tick.png">
+  </span>
   <h3>Tokyo</h3>
   <p>Tokyo is the capital of Japan.</p>
 </div>
 </div>
+
+
+
+
+
+
+<div class="alieia-tabs" style="display: none;">
+  <div class="tab alieia">
+    <button class="tablinks sub-alieia" onclick="openCity(event, 'Koina')" id="defaultOpen" >Κοινά αλιεύματα</button>
+    <button class="tablinks sub-alieia" onclick="openCity(event, 'Tropoi')" >Τρόποι αλίευσης</button>
+    <button class="tablinks sub-alieia" onclick="openCity(event, 'Diathesi')" >∆ιάθεση στον καταναλωτή</button>
+    <button class="tablinks sub-alieia" onclick="openCity(event, 'Pleon')" >Πλεονεκτήματα μειονεκτήματα</button>
+  </div>
+  <div id="Koina" class="tabcontent">
+    <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
+    <div class="row sub-categories">
+      <div class="col-md-2">
+        <img class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/gauros.png')"> 
+      </div>
+      <div class="col-md-2">
+        <img id="fish2" class="fish-img fish" src="./img/fish_less_dark.png" onclick="this.src=('./img/lithrini.png')">
+        <!-- <span id="fish2" class="text-fish">λυθρίνι</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish3" class="fish-img fish" src="./img/fish_medium.png" onclick="this.src=('./img/safridi.png')">
+        <!-- <span id="fish3" class="text-fish text-fish3">σαφρίδι</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish9" class="fish-img fish" src="./img/fish_dark.png" onclick="this.src=('./img/gauros.png')">
+        <!-- <span id="fish9" class="text-fish">φρίσσα</span> -->
+      </div>
+    </div>
+    <div class="row sub-categories">
+      <div class="col-md-2">
+        <img id="fish4" class="fish-img fish" src="./img/fish_dark.png" onclick="this.src=('./img/gopa.png')">
+        <!-- <span id="fish4" class="text-fish">γόπα</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish5" class="fish-img fish" src="./img/fish_medium.png" onclick="this.src=('./img/koutsomoura.png')">
+        <!-- <span id="fish5" class="text-fish">κουτσομούρα</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish6" class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/barbouni.png')">
+        <!-- <span id="fish6" class="text-fish">μπαρμπούνι</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish7" class="fish-img fish" src="./img/fish_dark.png" onclick="this.src=('./img/ksifias.png')">
+        <!-- <span id="fish7" class="text-fish">ξιφίας</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish8" class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/glwssa.png')">
+        <!-- <span id="fish8" class="text-fish">γλώσσα</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish10" class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/tonos.png')">
+        <!-- <span id="fish10" class="text-fish text-fish10">τόνος</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish11" class="fish-img fish" src="./img/fish_large.png" onclick="this.src=('./img/kolios.png')">
+        <!-- <span id="fish11" class="text-fish text-fish11">κολιός</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish12" class="fish-img fish" src="./img/fish_less_dark.png" onclick="this.src=('./img/bakaliaros.png')">
+        <!-- <span id="fish12" class="text-fish">μπακαλιάρος</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish13" class="fish-img fish" src="./img/fish_less_dark.png" onclick="this.src=('./img/rofos.png')">
+        <!-- <span id="fish13" class="text-fish">ροφός</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish14" class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/sargos.png')">
+        <!-- <span id="fish14" class="text-fish">σαργός</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish15" class="fish-img fish" src="./img/fish_large.png" onclick="this.src=('./img/xtapodi.png')">
+        <!-- <span id="fish15" class="text-fish text-fish15">χταπόδι</span> -->
+      </div>
+    </div>
+  </div>
+  <div id="Tropoi" class="tabcontent">
+    <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
+    <div class="row categories">
+      <div class="col-md-2">
+        <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
+         Κοινά αλιεύματα<br>.<img class="categories-img" src="./img/question.png">
+       </button>
+     </div>
+     <div class="offset-md-1 col-md-2">
+      <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
+        Τρόποι αλίευσης<br>.<img class="categories-img" src="./img/key.png">
+      </button>
+    </div>
+    <div class="offset-md-1 col-md-2">
+      <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
+        ∆ιάθεση<br>στον καταναλωτή<img class="categories-img" src="./img/key.png">
+      </button>
+    </div>
+    <div class="offset-md-1 col-md-2">
+      <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
+        Πλεονεκτήματα<br>& μειωνεκτήματα<img class="categories-img" src="./img/key.png">
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+
 
 </div><!-- /.container -->
     <!-- Bootstrap core JavaScript
