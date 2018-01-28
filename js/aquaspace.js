@@ -70,4 +70,44 @@ $('.carousel').on('slid.bs.carousel', function (evt) {
 });
 // var img = $("#starRating img");
 // img.attr("src", img.attr("src").replace("yelp", "my"));
+var clicks = 0;
+$("#showText").click(function () {
+	if (clicks == 0) {
+		clicks = 1;
+		$(".moretext").fadeIn('fast');
+	}else{
+		clicks = 0;
+		$(".moretext").fadeOut('fast');
+	}
+});
 
+var cpig = 0;
+function changeImagePig(){
+	if (cpig == 0) {
+		cpig =1;
+		document.getElementById("pig").src = "./img/pig.png";    
+	}
+}
+
+var ccow = 0;
+function changeImageCow(){
+	if (ccow == 0) {
+		ccow = 1;
+		document.getElementById("cow").src = "./img/cow.png";    
+	}
+}
+var csheep = 0;
+function changeImageSheep(){
+	if (csheep == 0) {
+		csheep = 1;
+		document.getElementById("sheep").src = "./img/sheep.png";    
+	}
+}
+
+var cchicken = 0;
+function changeImageChicken(){
+	if (cchicken == 0) {
+		cchicken = 1;
+		document.getElementById("chicken").src = "./img/chicken.png";    
+	}
+}

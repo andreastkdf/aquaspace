@@ -90,42 +90,60 @@
       </div>
       <div id="London" class="tabcontent">
         <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
-        <h3>London</h3>
-        <p>London is the capital city of England.</p>
-      </div>
-      <div id="Paris" class="tabcontent">
-        <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
         <div class="row sub-categories">
           <div class="col-md-2">
-            <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
-             Κοινά αλιεύματα<br>.<img class="categories-img" src="./img/question.png">
-           </button>
+            <img class="categories-img animals" id="cow" onclick="changeImageCow()" src="./img/cow_shadow.png">
+          </div>
+          <div class="offset-md-1 col-md-2">
+           <img class="categories-img animals" id="chicken" onclick="changeImageChicken()" src="./img/chicken_shadow.png">
          </div>
          <div class="offset-md-1 col-md-2">
-          <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
-            Τρόποι αλίευσης<br>.<img class="categories-img" src="./img/key.png">
-          </button>
+          <img class="categories-img animals" id="pig" onclick="changeImagePig()" src="./img/pig_shadow.png">
         </div>
         <div class="offset-md-1 col-md-2">
-          <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
-            ∆ιάθεση<br>στον καταναλωτή<img class="categories-img" src="./img/key.png">
-          </button>
-        </div>
-        <div class="offset-md-1 col-md-2">
-          <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
-            Πλεονεκτήματα<br>& μειονεκτήματα<img class="categories-img" src="./img/key.png">
-          </button>
+          <img class="categories-img animals" id="sheep" onclick="changeImageSheep()" src="./img/sheep_shadow.png">
         </div>
       </div>
+      <div class="row more">
+        <button type="button" class="btn btn-warning aquaButton" id="showText">Περισσότερα</button>
+      </div>
+       <div class="row moretext">
+        Προβλήματα και αδυναμίες της κτηνοτροφίας.<br>•Περιορισμός χώρου<br>•Συνωστισμός-συνθήκες αιχμαλωσίας<br>•∆ιαχείριση κατάλοιπων εκτροφής
+      </div>
     </div>
-    <div id="Tokyo" class="tabcontent">
+    <div id="Paris" class="tabcontent">
       <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
-      <h3>Tokyo</h3>
-      <p>Tokyo is the capital of Japan.</p>
+      <div class="row sub-categories">
+        <div class="col-md-2">
+          <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
+           Κοινά αλιεύματα<img class="categories-img" src="./img/question.png">
+         </button>
+       </div>
+       <div class="offset-md-1 col-md-2">
+        <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
+          Τρόποι αλίευσης<img class="categories-img" src="./img/key.png">
+        </button>
+      </div>
+      <div class="offset-md-1 col-md-2">
+        <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
+          ∆ιάθεση<br>στον καταναλωτή<img class="categories-img" src="./img/key.png">
+        </button>
+      </div>
+      <div class="offset-md-1 col-md-2">
+        <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
+          Πλεονεκτήματα<br>& μειονεκτήματα<img class="categories-img" src="./img/key.png">
+        </button>
+      </div>
     </div>
   </div>
+  <div id="Tokyo" class="tabcontent">
+    <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+</div>
 
-  </div><!-- /.container -->
+</div><!-- /.container -->
     <!-- Bootstrap core JavaScript
       ================================================== -->
       <!-- Placed at the end of the document so the pages load faster -->
