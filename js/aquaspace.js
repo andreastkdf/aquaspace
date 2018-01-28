@@ -52,7 +52,9 @@ $('#xersaies_container').click(function () {
 
 $('#koina_al').click(function(){
 	$("#aqua-tabs").fadeOut('fast',function(){
-		$(".alieia-tabs").fadeIn('fast');
+		$("#alieia-tabs").fadeIn('fast', function(){
+			$('#Koina').fadeIn('fast');
+		});
 	});
 });
 
@@ -85,6 +87,8 @@ $('#udato_container').click(function () {
 
 
 var finish = 0;
+var finishSub = 0;
+
 
 function closeTabs1(){
 	$("#aqua-tabs").fadeOut('fast', function(){
@@ -93,6 +97,17 @@ function closeTabs1(){
 			$("#xersaies").attr("src","./img/tick.png");
 			$("#alieia").attr("src","./img/question.png");
 			finish = 1;
+		}
+	});
+}
+
+function closeSubTabs1(){
+	$("#alieia-tabs").fadeOut('fast', function(){
+		$("#aqua-tabs").fadeIn('fast');
+		if (finishSub == 0 ) {
+			$("#koina_img").attr("src","./img/tick.png");
+			$("#tropoi_img").attr("src","./img/question.png");
+			finishSub = 1;
 		}
 	});
 }
