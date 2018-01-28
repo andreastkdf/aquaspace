@@ -232,6 +232,10 @@ body {
 	height: 50%;
 }
 
+.animals{
+	cursor: pointer;
+}
+
 #pig{
 	margin-left: 6%;
 }
@@ -323,6 +327,7 @@ body {
 	width: 58%;
 	padding-left: 45%;
 	margin-top: -5%;
+	position: absolute;
 }
 
 .moretext{

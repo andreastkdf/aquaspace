@@ -43,6 +43,13 @@ $('.categories-button').click(function () {
 	})
 })
 
+$("#close").click(function() {
+	$("#aqua-tabs").fadeOut('fast', function(){
+		$(".categories").fadeIn('fast');
+	});
+});
+
+
 $('.carousel').on('slid.bs.carousel', function (evt) {
 
 	var step = $(evt.relatedTarget).index();
@@ -68,6 +75,7 @@ $('.carousel').on('slid.bs.carousel', function (evt) {
 		$('#textSlide'+step).show('slow');
 	});
 });
+
 // var img = $("#starRating img");
 // img.attr("src", img.attr("src").replace("yelp", "my"));
 var clicks = 0;
