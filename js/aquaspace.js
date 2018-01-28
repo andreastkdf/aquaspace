@@ -37,23 +37,56 @@ $('.start_button').click(function () {
 	});
 });
 
-$('.categories-button').click(function () {
+
+var next=0;
+$('.categories-button.farm').click(function () {
 	$(".categories").fadeOut('fast',function(){
+		document.getElementById("defaultOpen").click();
 		$("#aqua-tabs").fadeIn('fast');
-	})
-})
+		if(next == 0){
+			next = 1;
+		}
+	});
+});
+
+$('#alieia_container').click(function () {
+	if (next > 0 ){
+		$(".London").removeAttr('id');
+		$(".Paris").attr('id','defaultOpen');
+		document.getElementById("defaultOpen").click();
+		$(".categories").fadeOut('fast',function(){
+			$("#aqua-tabs").fadeIn('fast');
+			next = 2;
+		});
+	}
+});
+
+$('#udato_container').click(function () {
+	if (next > 1 ){
+		$(".Paris").removeAttr('id');
+		$(".Tokyo").attr('id','defaultOpen');
+		document.getElementById("defaultOpen").click();
+		$(".categories").fadeOut('fast',function(){
+			document.getElementById("defaultOpen").click();
+			$("#aqua-tabs").fadeIn('fast');
+			next = 2;
+		});
+	}
+});
+
+
 
 $("#close").click(function() {
 	$("#aqua-tabs").fadeOut('fast', function(){
 		$(".categories").fadeIn('fast');
 		$("#xersaies").attr("src","./img/tick.png");
+		$("#alieia").attr("src","./img/question.png")
 
 	});
 });
 
 
 $('.carousel').on('slid.bs.carousel', function (evt) {
-
 	var step = $(evt.relatedTarget).index();
 	var before = step -1;
 	var after = step+1;

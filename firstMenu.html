@@ -72,21 +72,21 @@
         </button>
       </div>
       <div class="offset-md-1 col-md-2">
-        <button href="#" type="button" class="btn btn-outline-secondary categories-button">
-          αλιεία<img class="categories-img" src="./img/key.png">
+        <button href="#" type="button" id="alieia_container" class="btn btn-outline-secondary categories-button">
+          αλιεία<img class="categories-img" id="alieia" src="./img/key.png">
         </button>
       </div>
       <div class="offset-md-1 col-md-2">
-        <button href="#" type="button" class="btn btn-outline-secondary categories-button">
-          ? <img class="categories-img" src="./img/key.png">
+        <button href="#" type="button" id="udato_container" class="btn btn-outline-secondary categories-button">
+          ? <img class="categories-img" id="udato" src="./img/key.png">
         </button>
       </div>
     </div>
     <div id="aqua-tabs" style="display: none;">
       <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">χερσαίες φάρμες</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')" >αλιεία</button>
-        <button class="tablinks" onclick="openCity(event, 'Tokyo')" >?</button>
+        <button class="tablinks London" onclick="openCity(event, 'London')" id="defaultOpen">χερσαίες φάρμες</button>
+        <button class="tablinks Paris" onclick="openCity(event, 'Paris')" >αλιεία</button>
+        <button class="tablinks Tokyo" onclick="openCity(event, 'Tokyo')" >?</button>
       </div>
       <div id="London" class="tabcontent">
         <span id="close" class="topright">
@@ -114,35 +114,36 @@
       </div>
     </div>
     <div id="Paris" class="tabcontent">
-      <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
-      <div class="row sub-categories">
-        <div class="col-md-2">
-          <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
-           Κοινά αλιεύματα<img class="categories-img" src="./img/question.png">
-         </button>
-       </div>
-       <div class="offset-md-1 col-md-2">
+     <span id="close" class="topright">
+      <img src="./img/tick.png">
+    </span>
+    <div class="row sub-categories">
+      <div class="col-md-2">
         <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
-          Τρόποι αλίευσης<img class="categories-img" src="./img/key.png">
-        </button>
-      </div>
-      <div class="offset-md-1 col-md-2">
-        <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
-          ∆ιάθεση<br>στον καταναλωτή<img class="categories-img" src="./img/key.png">
-        </button>
-      </div>
-      <div class="offset-md-1 col-md-2">
-        <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
-          Πλεονεκτήματα<br>& μειονεκτήματα<img class="categories-img" src="./img/key.png">
-        </button>
-      </div>
+         Κοινά αλιεύματα<img class="categories-img" src="./img/question.png">
+       </button>
+     </div>
+     <div class="offset-md-1 col-md-2">
+      <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
+        Τρόποι αλίευσης<img class="categories-img" src="./img/key.png">
+      </button>
+    </div>
+    <div class="offset-md-1 col-md-2">
+      <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
+        ∆ιάθεση<br>στον καταναλωτή<img class="categories-img" src="./img/key.png">
+      </button>
+    </div>
+    <div class="offset-md-1 col-md-2">
+      <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
+        Πλεονεκτήματα<br>& μειονεκτήματα<img class="categories-img" src="./img/key.png">
+      </button>
     </div>
   </div>
-  <div id="Tokyo" class="tabcontent">
-    <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
-  </div>
+</div>
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
 </div>
 
 </div><!-- /.container -->
