@@ -46,6 +46,8 @@ $('.categories-button').click(function () {
 $("#close").click(function() {
 	$("#aqua-tabs").fadeOut('fast', function(){
 		$(".categories").fadeIn('fast');
+		$("#xersaies").attr("src","./img/tick.png");
+
 	});
 });
 
@@ -108,7 +110,7 @@ var csheep = 0;
 function changeImageSheep(){
 	if (csheep == 0) {
 		csheep = 1;
-		document.getElementById("sheep").src = "./img/sheep.png";    
+		document.getElementById("sheep").src = "./img/sheep.png";   
 	}
 }
 
