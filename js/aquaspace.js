@@ -39,11 +39,12 @@ $('.start_button').click(function () {
 
 
 var next=0;
-$('.categories-button.farm').click(function () {
+$('#xersaies_container').click(function () {
 	$(".categories").fadeOut('fast',function(){
-		document.getElementById("defaultOpen").click();
-		$("#aqua-tabs").fadeIn('fast');
-		if(next == 0){
+		if(next > -1){
+			$(".London").attr('id','defaultOpen');
+			document.getElementById("defaultOpen").click();
+			$("#aqua-tabs").fadeIn('fast');
 			next = 1;
 		}
 	});
@@ -52,6 +53,7 @@ $('.categories-button.farm').click(function () {
 $('#alieia_container').click(function () {
 	if (next > 0 ){
 		$(".London").removeAttr('id');
+		$(".Paris").fadeIn('fast');
 		$(".Paris").attr('id','defaultOpen');
 		document.getElementById("defaultOpen").click();
 		$(".categories").fadeOut('fast',function(){
@@ -64,27 +66,49 @@ $('#alieia_container').click(function () {
 $('#udato_container').click(function () {
 	if (next > 1 ){
 		$(".Paris").removeAttr('id');
+		$(".Tokyo").fadeIn('fast');
 		$(".Tokyo").attr('id','defaultOpen');
 		document.getElementById("defaultOpen").click();
 		$(".categories").fadeOut('fast',function(){
 			document.getElementById("defaultOpen").click();
 			$("#aqua-tabs").fadeIn('fast');
-			next = 2;
+			next = 3;
 		});
 	}
 });
 
 
+var finish = 0;
 
-$("#close").click(function() {
+function closeTabs1(){
 	$("#aqua-tabs").fadeOut('fast', function(){
 		$(".categories").fadeIn('fast');
-		$("#xersaies").attr("src","./img/tick.png");
-		$("#alieia").attr("src","./img/question.png")
-
+		if (finish == 0 ) {
+			$("#xersaies").attr("src","./img/tick.png");
+			$("#alieia").attr("src","./img/question.png");
+			finish = 1;
+		}
 	});
-});
+}
 
+function closeTabs2(){
+	$("#aqua-tabs").fadeOut('fast', function(){
+		$(".categories").fadeIn('fast');
+		if (finish == 1 ) {
+			$("#alieia").attr("src","./img/tick.png");
+			$("#udato").attr("src","./img/question.png");
+			finish = 2;
+		}
+	});
+}
+
+function closeTabs3(){
+	$("#aqua-tabs").fadeOut('fast', function(){
+		$(".categories").fadeIn('fast');
+		$("#udato").attr("src","./img/tick.png");
+		finish = 3;
+	});
+}
 
 $('.carousel').on('slid.bs.carousel', function (evt) {
 	var step = $(evt.relatedTarget).index();

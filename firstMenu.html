@@ -67,7 +67,7 @@
     </div>
     <div class="row categories">
       <div class="offset-md-1 col-md-2">
-        <button type="button" class="btn btn-outline-secondary farm categories-button">
+        <button type="button" id="xersaies_container" class="btn btn-outline-secondary farm categories-button">
           χερσαίες φάρμες <img class="categories-img" id="xersaies" src="./img/question.png">
         </button>
       </div>
@@ -85,11 +85,11 @@
     <div id="aqua-tabs" style="display: none;">
       <div class="tab">
         <button class="tablinks London" onclick="openCity(event, 'London')" id="defaultOpen">χερσαίες φάρμες</button>
-        <button class="tablinks Paris" onclick="openCity(event, 'Paris')" >αλιεία</button>
-        <button class="tablinks Tokyo" onclick="openCity(event, 'Tokyo')" >?</button>
+        <button class="tablinks Paris" onclick="openCity(event, 'Paris')" style="display:none">αλιεία</button>
+        <button class="tablinks Tokyo" onclick="openCity(event, 'Tokyo')" style="display:none">?</button>
       </div>
       <div id="London" class="tabcontent">
-        <span id="close" class="topright">
+        <span  class="topright" onclick="closeTabs1(event)">
           <img src="./img/tick.png">
         </span>
         <div class="row sub-categories">
@@ -114,7 +114,7 @@
       </div>
     </div>
     <div id="Paris" class="tabcontent">
-     <span id="close" class="topright">
+     <span class="topright" onclick="closeTabs2()">
       <img src="./img/tick.png">
     </span>
     <div class="row sub-categories">
@@ -141,6 +141,9 @@
   </div>
 </div>
 <div id="Tokyo" class="tabcontent">
+    <span class="topright" onclick="closeTabs3()">
+      <img src="./img/tick.png">
+    </span>
   <h3>Tokyo</h3>
   <p>Tokyo is the capital of Japan.</p>
 </div>
