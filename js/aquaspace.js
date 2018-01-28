@@ -46,7 +46,7 @@ $('.categories-button').click(function () {
 $("#close").click(function() {
 	$("#aqua-tabs").fadeOut('fast', function(){
 		$(".categories").fadeIn('fast');
-		$("#xersaies").attr("src","./img/tick.png");
+		$("# xersaies").attr("src","./img/tick.png");
 
 	});
 });
