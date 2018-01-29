@@ -2,7 +2,7 @@
 ## Private Web Application
 
 * HTML-CSS-JS : Andreas KOSTAKIS
-* Graphic Design: Ioanna DIMITRIOU & Andreas KOSTAKIS
+* Graphic Design: Ioanna DIMITRIOU
 
 Implemetend for desktop at a 1920x1080 resolution (not responsive, special use case).
 
