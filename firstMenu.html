@@ -153,15 +153,15 @@
 
     <div id="alieia-tabs" style="display: none;">
       <div class="tab alieia">
-        <button class="tablinks sub-alieia" onclick="openCity(event, 'Koina')" id="defaultOpen">Κοινά αλιεύματα</button>
-        <button class="tablinks sub-alieia" onclick="openCity(event, 'Tropoi')" >Τρόποι αλίευσης</button>
-        <button class="tablinks sub-alieia" onclick="openCity(event, 'Diathesi')" >∆ιάθεση στον καταναλωτή</button>
-        <button class="tablinks sub-alieia" onclick="openCity(event, 'Pleon')" >Πλεονεκτήματα μειονεκτήματα</button>
+        <button class="tablinks sub-alieia Koina" onclick="openCity(event, 'Koina')" id="defaultOpen">Κοινά αλιεύματα</button>
+        <button class="tablinks sub-alieia Tropoi" onclick="openCity(event, 'Tropoi')" >Τρόποι αλίευσης</button>
+        <button class="tablinks sub-alieia Diathesi" onclick="openCity(event, 'Diathesi')" >∆ιάθεση στον καταναλωτή</button>
+        <button class="tablinks sub-alieia Pleon" onclick="openCity(event, 'Pleon')" >Πλεονεκτήματα μειονεκτήματα</button>
       </div>
       <div id="Koina" class="tabcontent">
-        <span  class="topright" onclick="closeSubTabs1()">
+        <!-- <span  class="topright" onclick="closeSubTabs1()">
           <img src="./img/tick.png">
-        </span>
+        </span> -->
         <div class="row sub-categories">
           <div class="col-md-2">
             <img class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/gauros.png')"> 
@@ -228,38 +228,38 @@
       </div>
       <div id="Tropoi" class="tabcontent">
         <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
-        <div class="row categories">
+        <div class="row categories_tropoi">
           <div class="col-md-2">
-            <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
-             Κοινά αλιεύματα<br>.<img class="categories-img" src="./img/question.png">
-           </button>
+            <span>
+             Μηχανότρατα<img class="categories-img tropoi" src="./img/tropoi_a.png">
+           </span>
          </div>
          <div class="offset-md-1 col-md-2">
-          <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
-            Τρόποι αλίευσης<br>.<img class="categories-img" src="./img/key.png">
-          </button>
+          <span style="margin-left: 8%;">
+            Γρι γρι<img class="categories-img tropoi" src="./img/tropoi_b.png">
+          </span>
         </div>
         <div class="offset-md-1 col-md-2">
-          <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
-            ∆ιάθεση<br>στον καταναλωτή<img class="categories-img" src="./img/key.png">
-          </button>
+          <span style="margin-left: -10%;"> 
+            Πελαγικά παραγάδια<img class="categories-img tropoi" src="./img/tropoi_c.png">
+          </span>
         </div>
         <div class="offset-md-1 col-md-2">
-          <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
-            Πλεονεκτήματα<br>& μειωνεκτήματα<img class="categories-img" src="./img/key.png">
-          </button>
+          <span style="margin-left: 1%;">
+            Βιντζότρατα<img class="categories-img tropoi" src="./img/tropoi_d.png">
+          </span>
         </div>
       </div>
     </div>
     <div id="Diathesi" class="tabcontent">
       <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
-      <h3>Tokyo</h3>
-      <p>Tokyo is the capital of Japan.</p>
+      <h3>tab</h3>
+      <p>Under development</p>
     </div>
     <div id="Pleon" class="tabcontent">
       <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
-      <h3>Tokyo</h3>
-      <p>Tokyo is the capital of Japan.</p>
+      <h3>Tab</h3>
+      <p>Under development</p>
     </div>
   </div>
 

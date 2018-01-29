@@ -58,6 +58,13 @@ $('#koina_al').click(function(){
 	});
 });
 
+$('#tropoi_al').click(function(){
+	$("#Koina").removeAttr('id');
+	$("#Tropoi").fadeIn('fast');
+	$("#Tropoi").attr('id','defaultOpen');
+	document.getElementById("defaultOpen").click();
+});
+
 $('#alieia_container').click(function () {
 	if (next > 0 ){
 		$(".London").removeAttr('id');

@@ -149,33 +149,33 @@ body {
 
 .go_button{
 	position: fixed;
-    font-family: 'futuragreekmedium';
-    background-color: #e4a818 !important;
-    padding: 77px 0px 60px 0px;
-    color: #fff;
-    font-size: 185%;
-    margin-left: 26%;
-    margin-top: 8%;
-    border-radius: 10px;
-    width: 45%;
-    display: none;
-    height: 18%;
+	font-family: 'futuragreekmedium';
+	background-color: #e4a818 !important;
+	padding: 77px 0px 60px 0px;
+	color: #fff;
+	font-size: 185%;
+	margin-left: 26%;
+	margin-top: 8%;
+	border-radius: 10px;
+	width: 45%;
+	display: none;
+	height: 18%;
 }
 
 .under_go{
-    position: absolute;
-    display: block;
-    padding-top: 2%;
-    height: 153% !important;
-    margin-top: 8%;
-    width: 100%;
-    text-align: left;
-    padding-left: 27%;
-    font-family: 'futuragreekbk';
-    background: #c7c8ca;
-    font-size: 22px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+	position: absolute;
+	display: block;
+	padding-top: 2%;
+	height: 153% !important;
+	margin-top: 8%;
+	width: 100%;
+	text-align: left;
+	padding-left: 27%;
+	font-family: 'futuragreekbk';
+	background: #c7c8ca;
+	font-size: 22px;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
 }
 .carousel-control {
 	position: absolute;
@@ -451,4 +451,20 @@ body {
 	position: absolute;
 	margin-left: 90%;
 	margin-top: -19%
+}
+
+.categories_tropoi{
+	padding-top: 12.5%;
+	padding-left: 17%;
+	height: 43%;
+	width: 99%;
+}
+
+.tropoi{
+	    width: 86%;
+    height: 107%;
+    margin-top: 10%;
+    margin-left: -25%;
+    display: block;
+    position: absolute;
 }
