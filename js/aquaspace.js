@@ -138,6 +138,7 @@ $('.carousel').on('slid.bs.carousel', function (evt) {
 
 	if (step == 0){
 		before = 2;
+		$(".carousel-control-prev-icon").fadeOut('fast');
 	}
 
 	if (step == 2){
@@ -146,6 +147,7 @@ $('.carousel').on('slid.bs.carousel', function (evt) {
 		$('.endIntro').fadeIn('fast');
 	}else{
 		$('.carousel-control-next').css('display','');
+		$(".carousel-control-prev-icon").fadeIn('fast');
 	}
 
 	$(' #textSlide'+before).hide('slow', function() {
