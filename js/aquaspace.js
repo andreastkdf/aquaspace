@@ -58,13 +58,6 @@ $('#koina_al').click(function(){
 	});
 });
 
-$('#tropoi_al').click(function(){
-	$("#Koina").removeAttr('id');
-	$("#Tropoi").fadeIn('fast');
-	$("#Tropoi").attr('id','defaultOpen');
-	document.getElementById("defaultOpen").click();
-});
-
 $('#alieia_container').click(function () {
 	if (next > 0 ){
 		$(".London").removeAttr('id');
@@ -151,6 +144,7 @@ $('.carousel').on('slid.bs.carousel', function (evt) {
 	if (step == 2){
 		after = 0;
 		$('.carousel-control-next').css('display','none');
+		$(".carousel-control-prev-icon").fadeOut('fast');
 		$('.endIntro').fadeIn('fast');
 	}else{
 		$('.carousel-control-next').css('display','');
