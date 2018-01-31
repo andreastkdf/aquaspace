@@ -453,11 +453,25 @@ body {
 	margin-top: -19%
 }
 
+#Tropoi{
+	background-color: #c7c8ca;
+}
+
 .categories_tropoi{
-	padding-top: 12.5%;
-	padding-left: 17%;
-	height: 43%;
-	width: 99%;
+	padding-top: 4.5%;
+	padding-left: 8%;
+	height: 100%;
+	text-align: center;
+	font-size: 26px;
+}
+
+#Diathesi{
+	background-color: #c7c8ca;
+}
+
+.tropoi_img{
+	height: 26%;
+	margin-top: 5%;
 }
 
 .categories_pleon{
@@ -476,9 +490,9 @@ body {
 
 .pleon_subtitle{
 	clear: both;
-    width: 146%;
-    margin-top: 10%;
-    position: absolute;
+	width: 146%;
+	margin-top: 10%;
+	position: absolute;
 }
 
 #Pleon{
