@@ -151,14 +151,14 @@
 
 
 
-    <div id="alieia-tabs" style="display: none;">
-      <div class="tab alieia">
-        <button class="tablinks sub-alieia Koina" onclick="openCity(event, 'Koina')" id="defaultOpen">Κοινά αλιεύματα</button>
-        <button class="tablinks sub-alieia Tropoi" onclick="openCity(event, 'Tropoi')" >Τρόποι αλίευσης</button>
-        <button class="tablinks sub-alieia Diathesi" onclick="openCity(event, 'Diathesi')" >∆ιάθεση στον καταναλωτή</button>
-        <button class="tablinks sub-alieia Pleon" onclick="openCity(event, 'Pleon')" >Πλεονεκτήματα μειονεκτήματα</button>
-      </div>
-      <div id="Koina" class="tabcontent">
+<div id="alieia-tabs" style="display: none;">
+  <div class="tab alieia">
+    <button class="tablinks sub-alieia Koina" onclick="openCity(event, 'Koina')" id="defaultOpen">Κοινά αλιεύματα</button>
+    <button class="tablinks sub-alieia Tropoi" onclick="openCity(event, 'Tropoi')" >Τρόποι αλίευσης</button>
+    <button class="tablinks sub-alieia Diathesi" onclick="openCity(event, 'Diathesi')" >∆ιάθεση στον καταναλωτή</button>
+    <button class="tablinks sub-alieia Pleon" onclick="openCity(event, 'Pleon')" >Πλεονεκτήματα μειονεκτήματα</button>
+  </div>
+  <div id="Koina" class="tabcontent">
         <!-- <span  class="topright" onclick="closeSubTabs1()">
           <img src="./img/tick.png">
         </span> -->
@@ -253,33 +253,55 @@
     </div>
     <div id="Diathesi" class="tabcontent">
       <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
-     <div class="row categories_tropoi">
-          <div class="col-md-2">
-            <span>
-             Εκφόρτωση<img class="categories-img tropoi" src="./img/diath_a.png">
-           </span>
-         </div>
-         <div class="offset-md-1 col-md-2">
-          <span style="margin-left: 3%;">
-            Κεντρική αγορά<img class="categories-img tropoi" src="./img/diath_b.png">
-          </span>
-        </div>
-        <div class="offset-md-1 col-md-2">
-          <span style="margin-left: 0%;"> 
-            Τοπική αγορά<img class="categories-img tropoi" src="./img/diath_c.png">
-          </span>
-        </div>
-        <div class="offset-md-1 col-md-2">
-          <span style="margin-left: -5%;">
-            Πιάτο καταναλωτή<img class="categories-img tropoi" src="./img/diath_d.png">
-          </span>
-        </div>
+      <div class="row categories_tropoi">
+        <div class="col-md-2">
+          <span>
+           Εκφόρτωση<img class="categories-img tropoi" src="./img/diath_a.png">
+         </span>
+       </div>
+       <div class="offset-md-1 col-md-2">
+        <span style="margin-left: 3%;">
+          Κεντρική αγορά<img class="categories-img tropoi" src="./img/diath_b.png">
+        </span>
+      </div>
+      <div class="offset-md-1 col-md-2">
+        <span style="margin-left: 0%;"> 
+          Τοπική αγορά<img class="categories-img tropoi" src="./img/diath_c.png">
+        </span>
+      </div>
+      <div class="offset-md-1 col-md-2">
+        <span style="margin-left: -5%;">
+          Πιάτο καταναλωτή<img class="categories-img tropoi" src="./img/diath_d.png">
+        </span>
       </div>
     </div>
-    <div id="Pleon" class="tabcontent">
-      <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
-      <h3>Tab</h3>
-      <p>Sorry. Under development. Refresh for going back to previous menu, and get the last update of Aquaspace.</p>
+  </div>
+  <div id="Pleon" class="tabcontent">
+    <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
+    <div class="row categories_pleon">
+      <div class="offset-md-3 col-md-2">
+        <img class="pleon_img" src="./img/plus.png">
+        <div class="row">
+          <h1 class="pleon_title">Πλεονεκτήματα</h1>
+        </div>
+        <div class="row">
+          <h3 class="pleon_title pleon_subtitle">
+            •Φρεσκότητα<br>•Μεγάλη ποικιλία ειδών<br>•Άμεση επαφή με τον πωλητή
+          </h3>
+        </div>
+
+      </div>
+      <div class="offset-md-2 col-md-2">
+        <img class="pleon_img" src="./img/minus.png">
+         <div class="row">
+          <h1 class="pleon_title">Μειονεκτήματα</h1>
+        </div>
+        <div class="row">
+          <h3 class="pleon_title pleon_subtitle">
+            •Επιπτώσεις των αλιευτικών εργαλείων<br>σε μη εμπορικά είδη.<br>•Επιπτώσεις των αλιευτικών εργαλείων<br>στο περιβάλλον.            
+          </h3>
+        </div>
+      </div>
     </div>
   </div>
 

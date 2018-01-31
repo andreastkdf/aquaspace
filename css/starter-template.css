@@ -460,11 +460,38 @@ body {
 	width: 99%;
 }
 
-.tropoi{
-	    width: 86%;
-    height: 107%;
+.categories_pleon{
+	margin-top: 2%;
+}
+
+.pleon_img{
+	width: 50%;
+}
+
+.pleon_title{
+	margin-left: 5%;
+	margin-top: 10%;
+	text-align: left;
+}
+
+.pleon_subtitle{
+	clear: both;
+    width: 146%;
     margin-top: 10%;
-    margin-left: -25%;
-    display: block;
     position: absolute;
+}
+
+#Pleon{
+	display: block;
+	background-color: #c7c8ca
+}
+
+
+.tropoi{
+	width: 86%;
+	height: 107%;
+	margin-top: 10%;
+	margin-left: -25%;
+	display: block;
+	position: absolute;
 }
