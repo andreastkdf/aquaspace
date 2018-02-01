@@ -371,6 +371,7 @@ body {
 
 .fish{
 	height: 40%;
+	cursor: pointer;
 }
 
 .fish-img{
