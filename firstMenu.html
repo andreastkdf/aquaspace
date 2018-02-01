@@ -114,7 +114,7 @@
       </div>
     </div>
     <div id="Paris" class="tabcontent">
-     <span class="topright" onclick="closeTabs2()">
+     <span class="topright close_Paris" onclick="closeTabs2()" style="display: none;">
       <img src="./img/tick.png">
     </span>
     <div class="row sub-categories">
@@ -129,13 +129,13 @@
       </button>
     </div>
     <div class="offset-md-1 col-md-2">
-      <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
-        ∆ιάθεση<br>στον καταναλωτή<img class="categories-img" src="./img/key.png">
+      <button href="#" type="button" id="diath_al" class="btn btn-outline-secondary tab-categories-button">
+        ∆ιάθεση<br>στον καταναλωτή<img class="categories-img" id='diath_img' src="./img/key.png">
       </button>
     </div>
     <div class="offset-md-1 col-md-2">
-      <button href="#" type="button" class="btn btn-outline-secondary tab-categories-button">
-        Πλεονεκτήματα<br>& μειονεκτήματα<img class="categories-img" src="./img/key.png">
+      <button href="#" type="button" id="sun_al" class="btn btn-outline-secondary tab-categories-button">
+        Πλεονεκτήματα<br>& μειονεκτήματα<img class="categories-img" id="sun_img" src="./img/key.png">
       </button>
     </div>
   </div>
@@ -154,14 +154,14 @@
 <div id="alieia-tabs" style="display: none;">
   <div class="tab alieia">
     <button class="tablinks sub-alieia Koina" onclick="openCity(event, 'Koina')" id="defaultOpen">Κοινά αλιεύματα</button>
-    <button class="tablinks sub-alieia Tropoi" onclick="openCity(event, 'Tropoi')" >Τρόποι αλίευσης</button>
-    <button class="tablinks sub-alieia Diathesi" onclick="openCity(event, 'Diathesi')" >∆ιάθεση στον καταναλωτή</button>
-    <button class="tablinks sub-alieia Pleon" onclick="openCity(event, 'Pleon')" >Πλεονεκτήματα μειονεκτήματα</button>
+    <button class="tablinks sub-alieia Tropoi" onclick="openCity(event, 'Tropoi')" style="display:none">Τρόποι αλίευσης</button>
+    <button class="tablinks sub-alieia Diathesi" onclick="openCity(event, 'Diathesi')" style="display:none">∆ιάθεση στον καταναλωτή</button>
+    <button class="tablinks sub-alieia Pleon" onclick="openCity(event, 'Pleon')" style="display:none">Πλεονεκτήματα μειονεκτήματα</button>
   </div>
   <div id="Koina" class="tabcontent">
-        <!-- <span  class="topright" onclick="closeSubTabs1()">
+        <span  class="topright" onclick="closeSubTabs1()">
           <img src="./img/tick.png">
-        </span> -->
+        </span>
         <div class="row sub-categories">
           <div class="col-md-2">
             <img class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/gauros.png')"> 
@@ -228,6 +228,9 @@
       </div>
       <div id="Tropoi" class="tabcontent">
         <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
+        <span class="topright" onclick="closeSubTabs2()">
+          <img src="./img/tick.png">
+        </span>
         <div class="row categories_tropoi">
           <div class="col-md-2">
             <span>
@@ -253,6 +256,9 @@
     </div>
     <div id="Diathesi" class="tabcontent">
       <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
+      <span class="topright" onclick="closeSubTabs3()">
+          <img src="./img/tick.png">
+      </span>
       <div class="row categories_tropoi">
         <div class="col-md-2">
           <span>
@@ -278,6 +284,9 @@
   </div>
   <div id="Pleon" class="tabcontent">
     <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
+    <span class="topright" onclick="closeSubTabs4()">
+          <img src="./img/tick.png">
+      </span>
     <div class="row categories_pleon">
       <div class="offset-md-3 col-md-2">
         <img class="pleon_img" src="./img/plus.png">

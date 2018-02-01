@@ -50,13 +50,6 @@ $('#xersaies_container').click(function () {
 	});
 });
 
-$('#koina_al').click(function(){
-	$("#aqua-tabs").fadeOut('fast',function(){
-		$("#alieia-tabs").fadeIn('fast', function(){
-			$('#Koina').fadeIn('fast');
-		});
-	});
-});
 
 $('#alieia_container').click(function () {
 	if (next > 0 ){
@@ -87,9 +80,6 @@ $('#udato_container').click(function () {
 
 
 var finish = 0;
-var finishSub = 0;
-
-
 function closeTabs1(){
 	$("#aqua-tabs").fadeOut('fast', function(){
 		$(".categories").fadeIn('fast');
@@ -101,16 +91,6 @@ function closeTabs1(){
 	});
 }
 
-function closeSubTabs1(){
-	$("#alieia-tabs").fadeOut('fast', function(){
-		$("#aqua-tabs").fadeIn('fast');
-		if (finishSub == 0 ) {
-			$("#koina_img").attr("src","./img/tick.png");
-			$("#tropoi_img").attr("src","./img/question.png");
-			finishSub = 1;
-		}
-	});
-}
 
 function closeTabs2(){
 	$("#aqua-tabs").fadeOut('fast', function(){
@@ -130,6 +110,128 @@ function closeTabs3(){
 		finish = 3;
 	});
 }
+
+
+
+var sub_next=0;
+$('#koina_al').click(function(){
+	if(sub_next > -1 ){
+		$(".Paris").removeAttr('id');
+		$(".London").removeAttr('id');
+		$(".Tokyo").removeAttr('id');
+		$(".Koina").attr('id','defaultOpen');
+		$("#alieia-tabs").fadeIn('fast', function(){
+			$("#aqua-tabs").slideUp('slow');	
+		});
+		document.getElementById('defaultOpen').click();
+		sub_next = 1;
+	}
+});
+
+$('#tropoi_al').click(function(){
+	if (sub_next > 0){
+		$(".Paris").removeAttr('id');
+		$(".London").removeAttr('id');
+		$(".Tokyo").removeAttr('id');
+		$(".Tropoi").fadeIn('fast');
+		$(".Tropoi").attr('id','defaultOpen');
+		$("#alieia-tabs").fadeIn('fast', function(){
+			$("#aqua-tabs").slideUp('slow');
+		});
+		document.getElementById('defaultOpen').click();
+		sub_next = 2;
+	}
+});
+
+$('#diath_al').click(function(){
+	if (sub_next > 1){
+		$(".Paris").removeAttr('id');
+		$(".London").removeAttr('id');
+		$(".Tokyo").removeAttr('id');
+		$(".Diathesi").fadeIn('fast');
+		$(".Diathesi").attr('id','defaultOpen');
+		$("#alieia-tabs").fadeIn('fast', function(){
+			$("#aqua-tabs").slideUp('slow');	
+		});
+		document.getElementById('defaultOpen').click();
+		sub_next = 3;
+	}
+});
+
+$('#sun_al').click(function(){
+	if (sub_next > 2){
+		$(".Paris").removeAttr('id');
+		$(".London").removeAttr('id');
+		$(".Tokyo").removeAttr('id');
+		$(".Pleon").fadeIn('fast');
+		$(".Pleon").attr('id','defaultOpen');
+		$("#alieia-tabs").fadeIn('fast', function(){
+			$("#aqua-tabs").slideUp('slow');	
+		});
+		document.getElementById('defaultOpen').click();
+		sub_next = 4;
+	}
+});
+
+var finishSub = 0;
+function closeSubTabs1(){
+	$("#alieia-tabs").fadeOut('fast', function(){
+		$(".Koina").removeAttr('id');
+		$(".Paris").attr('id','defaultOpen');
+		$("#aqua-tabs").fadeIn('fast');
+		if (finishSub==0) {
+			$("#koina_img").attr("src","./img/tick.png");
+			$("#tropoi_img").attr("src","./img/question.png");
+			finishSub=1;
+		}
+		document.getElementById('defaultOpen').click();
+		
+	});
+}
+
+function closeSubTabs2(){
+	$("#alieia-tabs").fadeOut('fast', function(){
+		$(".Tropoi").removeAttr('id');
+		$(".Paris").attr('id','defaultOpen');
+		$("#aqua-tabs").fadeIn('fast');
+		if (finishSub==1) {
+			$("#tropoi_img").attr("src","./img/tick.png");
+			$("#diath_img").attr("src","./img/question.png");
+			finishSub=2;
+		}
+		document.getElementById('defaultOpen').click();
+		
+	});
+}
+
+function closeSubTabs3(){
+	$("#alieia-tabs").fadeOut('fast', function(){
+		$(".Diathesi").removeAttr('id');
+		$(".Paris").attr('id','defaultOpen');
+		$("#aqua-tabs").fadeIn('fast');
+		if (finishSub==2) {
+			$("#diath_img").attr("src","./img/tick.png");
+			$("#sun_img").attr("src","./img/question.png");
+			finishSub=3;
+		}
+		document.getElementById('defaultOpen').click();
+		
+	});
+}
+
+function closeSubTabs4(){
+	$("#alieia-tabs").fadeOut('fast', function(){
+		$(".Pleon").removeAttr('id');
+		$(".Paris").attr('id','defaultOpen');
+		$("#aqua-tabs").fadeIn('fast');
+		$("#sun_img").attr("src","./img/tick.png");
+		$(".close_Paris").fadeIn('fast');
+		document.getElementById('defaultOpen').click();		
+		finishSub=4;
+	});
+}
+
+
 
 $('.carousel').on('slid.bs.carousel', function (evt) {
 	var step = $(evt.relatedTarget).index();
