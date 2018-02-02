@@ -1,3 +1,7 @@
+/*  
+AQUASPACE JS
+Copyright (c) 2017 Andreas KOSTAKIS;  */
+
 
 $("#logo").click(function(){
 	$("#logo").fadeOut('300');
@@ -238,6 +242,20 @@ function closeSubTabs4(){
 		finishSub=4;
 	});
 }
+
+var ud_show=0;
+function ud_show_text(){
+	if (ud_show ==0 ){
+		$('.ud_more_text').slideDown('fast');
+		ud_show = 1;
+	}else{
+		$('.ud_more_text').slideUp('fast');
+		ud_show = 0;
+	}
+}
+
+
+
 
 
 
