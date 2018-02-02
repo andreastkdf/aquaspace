@@ -78,76 +78,117 @@
       </div>
       <div class="offset-md-1 col-md-2">
         <button href="#" type="button" id="udato_container" class="btn btn-outline-secondary categories-button">
-          ? <img class="categories-img" id="udato" src="./img/key.png">
-        </button>
-      </div>
-    </div>
-    <div id="aqua-tabs" style="display: none;">
-      <div class="tab">
-        <button class="tablinks London" onclick="openCity(event, 'London')" id="defaultOpen">χερσαίες φάρμες</button>
-        <button class="tablinks Paris" onclick="openCity(event, 'Paris')" style="display:none">αλιεία</button>
-        <button class="tablinks Tokyo" onclick="openCity(event, 'Tokyo')" style="display:none">?</button>
-      </div>
-      <div id="London" class="tabcontent">
-        <span  class="topright" onclick="closeTabs1(event)">
-          <img src="./img/tick.png">
-        </span>
-        <div class="row sub-categories">
-          <div class="col-md-2">
-            <img class="categories-img animals" id="cow" onclick="changeImageCow()" src="./img/cow_shadow.png">
-          </div>
-          <div class="offset-md-1 col-md-2">
-           <img class="categories-img animals" id="chicken" onclick="changeImageChicken()" src="./img/chicken_shadow.png">
-         </div>
-         <div class="offset-md-1 col-md-2">
-          <img class="categories-img animals" id="pig" onclick="changeImagePig()" src="./img/pig_shadow.png">
+          <div  class="bam ml11" >
+           <span class="text-wrapper">
+            <span class="line line1" style="display: none;"></span>
+            <span class="letters" style="display: none;">υδατοκαλλι&#941;ργεια</span>
+          </span>
         </div>
-        <div class="offset-md-1 col-md-2">
-          <img class="categories-img animals" id="sheep" onclick="changeImageSheep()" src="./img/sheep_shadow.png">
-        </div>
-      </div>
-      <div class="row more">
-        <button type="button" class="btn btn-warning aquaButton" id="showText" >Περισσότερα</button>
-      </div>
-      <div class="row moretext">
-        Προβλήματα και αδυναμίες της κτηνοτροφίας.<br>•Περιορισμός χώρου<br>•Συνωστισμός-συνθήκες αιχμαλωσίας<br>•∆ιαχείριση κατάλοιπων εκτροφής
-      </div>
-    </div>
-    <div id="Paris" class="tabcontent">
-     <span class="topright close_Paris" onclick="closeTabs2()" style="display: none;">
-      <img src="./img/tick.png">
-    </span>
-    <div class="row sub-categories">
-      <div class="col-md-2">
-        <button href="#" type="button" id="koina_al" class="btn btn-outline-secondary tab-categories-button">
-         Κοινά αλιεύματα<img class="categories-img" id="koina_img" src="./img/question.png">
-       </button>
-     </div>
-     <div class="offset-md-1 col-md-2">
-      <button href="#" type="button" id="tropoi_al" class="btn btn-outline-secondary tab-categories-button">
-        Τρόποι αλίευσης<img class="categories-img" id='tropoi_img' src="./img/key.png">
-      </button>
-    </div>
-    <div class="offset-md-1 col-md-2">
-      <button href="#" type="button" id="diath_al" class="btn btn-outline-secondary tab-categories-button">
-        ∆ιάθεση<br>στον καταναλωτή<img class="categories-img" id='diath_img' src="./img/key.png">
-      </button>
-    </div>
-    <div class="offset-md-1 col-md-2">
-      <button href="#" type="button" id="sun_al" class="btn btn-outline-secondary tab-categories-button">
-        Πλεονεκτήματα<br>& μειονεκτήματα<img class="categories-img" id="sun_img" src="./img/key.png">
+        <img class="categories-img" id="udato" src="./img/key.png">
       </button>
     </div>
   </div>
+  <div id="aqua-tabs" style="display: none;">
+    <div class="tab">
+      <button class="tablinks London" onclick="openCity(event, 'London')" id="defaultOpen">χερσαίες φάρμες</button>
+      <button class="tablinks Paris" onclick="openCity(event, 'Paris')" style="display:none">αλιεία</button>
+      <button class="tablinks Tokyo" onclick="openCity(event, 'Tokyo')" style="display:none">?</button>
+    </div>
+    <div id="London" class="tabcontent">
+      <span  class="topright" onclick="closeTabs1(event)">
+        <img src="./img/tick.png">
+      </span>
+      <div class="row sub-categories">
+        <div class="col-md-2">
+          <img class="categories-img animals" id="cow" onclick="changeImageCow()" src="./img/cow_shadow.png">
+        </div>
+        <div class="offset-md-1 col-md-2">
+         <img class="categories-img animals" id="chicken" onclick="changeImageChicken()" src="./img/chicken_shadow.png">
+       </div>
+       <div class="offset-md-1 col-md-2">
+        <img class="categories-img animals" id="pig" onclick="changeImagePig()" src="./img/pig_shadow.png">
+      </div>
+      <div class="offset-md-1 col-md-2">
+        <img class="categories-img animals" id="sheep" onclick="changeImageSheep()" src="./img/sheep_shadow.png">
+      </div>
+    </div>
+    <div class="row more">
+      <button type="button" class="btn btn-warning aquaButton" id="showText" >Περισσότερα</button>
+    </div>
+    <div class="row moretext">
+      Προβλήματα και αδυναμίες της κτηνοτροφίας.<br>•Περιορισμός χώρου<br>•Συνωστισμός-συνθήκες αιχμαλωσίας<br>•∆ιαχείριση κατάλοιπων εκτροφής
+    </div>
+  </div>
+  <div id="Paris" class="tabcontent">
+   <span class="topright close_Paris" onclick="closeTabs2()" style="display: none;">
+    <img src="./img/tick.png">
+  </span>
+  <div class="row sub-categories">
+    <div class="col-md-2">
+      <button href="#" type="button" id="koina_al" class="btn btn-outline-secondary tab-categories-button">
+       Κοινά αλιεύματα<img class="categories-img" id="koina_img" src="./img/question.png">
+     </button>
+   </div>
+   <div class="offset-md-1 col-md-2">
+    <button href="#" type="button" id="tropoi_al" class="btn btn-outline-secondary tab-categories-button">
+      Τρόποι αλίευσης<img class="categories-img" id='tropoi_img' src="./img/key.png">
+    </button>
+  </div>
+  <div class="offset-md-1 col-md-2">
+    <button href="#" type="button" id="diath_al" class="btn btn-outline-secondary tab-categories-button">
+      ∆ιάθεση<br>στον καταναλωτή<img class="categories-img" id='diath_img' src="./img/key.png">
+    </button>
+  </div>
+  <div class="offset-md-1 col-md-2">
+    <button href="#" type="button" id="sun_al" class="btn btn-outline-secondary tab-categories-button">
+      Πλεονεκτήματα<br>& μειονεκτήματα<img class="categories-img" id="sun_img" src="./img/key.png">
+    </button>
+  </div>
 </div>
+</div>
+
+
+
+
+
+
 <div id="Tokyo" class="tabcontent">
   <span class="topright" onclick="closeTabs3()">
     <img src="./img/tick.png">
   </span>
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
+    <div class="row sub-categories">
+    <div class="col-md-2">
+      <button href="#" type="button" id="ektref_ud" class="btn btn-outline-secondary tab-categories-button">
+        Κοινα<br>εκτρεφόμενα είδη<img class="categories-img" id="ektref_img" src="./img/question.png">
+     </button>
+   </div>
+   <div class="offset-md-1 col-md-2">
+    <button href="#" type="button" id="diadikasia_ud" class="btn btn-outline-secondary tab-categories-button">
+      ∆ιαδικασία<br>παραγωγής<img class="categories-img" id='diadikasia_img' src="./img/key.png">
+    </button>
+  </div>
+  <div class="offset-md-1 col-md-2">
+    <button href="#" type="button" id="diath_ud" class="btn btn-outline-secondary tab-categories-button">
+      ∆ιάθεση<br>στον καταναλωτή<img class="categories-img" id='diath_ud_img' src="./img/key.png">
+    </button>
+  </div>
+  <div class="offset-md-1 col-md-2">
+    <button href="#" type="button" id="sun_ud" class="btn btn-outline-secondary tab-categories-button">
+      Πλεονεκτήματα<br>& μειονεκτήματα<img class="categories-img" id="sun_ud_img" src="./img/key.png">
+    </button>
+  </div>
 </div>
 </div>
+
+
+
+
+
+
+
+</div>
+
+
 
 
 
@@ -159,159 +200,159 @@
     <button class="tablinks sub-alieia Pleon" onclick="openCity(event, 'Pleon')" style="display:none">Πλεονεκτήματα μειονεκτήματα</button>
   </div>
   <div id="Koina" class="tabcontent">
-        <span  class="topright" onclick="closeSubTabs1()">
-          <img src="./img/tick.png">
-        </span>
-        <div class="row sub-categories">
-          <div class="col-md-2">
-            <img class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/gauros.png')"> 
-          </div>
-          <div class="col-md-2">
-            <img id="fish2" class="fish-img fish" src="./img/fish_less_dark.png" onclick="this.src=('./img/lithrini.png')">
-            <!-- <span id="fish2" class="text-fish">λυθρίνι</span> -->
-          </div>
-          <div class="col-md-2">
-            <img id="fish3" class="fish-img fish" src="./img/fish_medium.png" onclick="this.src=('./img/safridi.png')">
-            <!-- <span id="fish3" class="text-fish text-fish3">σαφρίδι</span> -->
-          </div>
-          <div class="col-md-2">
-            <img id="fish9" class="fish-img fish" src="./img/fish_dark.png" onclick="this.src=('./img/gauros.png')">
-            <!-- <span id="fish9" class="text-fish">φρίσσα</span> -->
-          </div>
-        </div>
-        <div class="row sub-categories">
-          <div class="col-md-2">
-            <img id="fish4" class="fish-img fish" src="./img/fish_dark.png" onclick="this.src=('./img/gopa.png')">
-            <!-- <span id="fish4" class="text-fish">γόπα</span> -->
-          </div>
-          <div class="col-md-2">
-            <img id="fish5" class="fish-img fish" src="./img/fish_medium.png" onclick="this.src=('./img/koutsomoura.png')">
-            <!-- <span id="fish5" class="text-fish">κουτσομούρα</span> -->
-          </div>
-          <div class="col-md-2">
-            <img id="fish6" class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/barbouni.png')">
-            <!-- <span id="fish6" class="text-fish">μπαρμπούνι</span> -->
-          </div>
-          <div class="col-md-2">
-            <img id="fish7" class="fish-img fish" src="./img/fish_dark.png" onclick="this.src=('./img/ksifias.png')">
-            <!-- <span id="fish7" class="text-fish">ξιφίας</span> -->
-          </div>
-          <div class="col-md-2">
-            <img id="fish8" class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/glwssa.png')">
-            <!-- <span id="fish8" class="text-fish">γλώσσα</span> -->
-          </div>
-          <div class="col-md-2">
-            <img id="fish10" class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/tonos.png')">
-            <!-- <span id="fish10" class="text-fish text-fish10">τόνος</span> -->
-          </div>
-          <div class="col-md-2">
-            <img id="fish11" class="fish-img fish" src="./img/fish_large.png" onclick="this.src=('./img/kolios.png')">
-            <!-- <span id="fish11" class="text-fish text-fish11">κολιός</span> -->
-          </div>
-          <div class="col-md-2">
-            <img id="fish12" class="fish-img fish" src="./img/fish_less_dark.png" onclick="this.src=('./img/bakaliaros.png')">
-            <!-- <span id="fish12" class="text-fish">μπακαλιάρος</span> -->
-          </div>
-          <div class="col-md-2">
-            <img id="fish13" class="fish-img fish" src="./img/fish_less_dark.png" onclick="this.src=('./img/rofos.png')">
-            <!-- <span id="fish13" class="text-fish">ροφός</span> -->
-          </div>
-          <div class="col-md-2">
-            <img id="fish14" class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/sargos.png')">
-            <!-- <span id="fish14" class="text-fish">σαργός</span> -->
-          </div>
-          <div class="col-md-2">
-            <img id="fish15" class="fish-img fish" src="./img/fish_large.png" onclick="this.src=('./img/xtapodi.png')">
-            <!-- <span id="fish15" class="text-fish text-fish15">χταπόδι</span> -->
-          </div>
-        </div>
+    <span  class="topright" onclick="closeSubTabs1()">
+      <img src="./img/tick.png">
+    </span>
+    <div class="row sub-categories">
+      <div class="col-md-2">
+        <img class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/gauros.png')"> 
       </div>
-      <div id="Tropoi" class="tabcontent">
-        <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
-        <span class="topright" onclick="closeSubTabs2()">
-          <img src="./img/tick.png">
-        </span>
-        <div class="row categories_tropoi">
-          <div class="col-md-2">
-            <span>
-             Μηχανότρατα<img class="tropoi_img" src="./img/tropoi_a.png">
-           </span>
-         </div>
-         <div class="offset-md-1 col-md-2">
-          <span>
-            Γρι γρι<img class="tropoi_img" src="./img/tropoi_b.png">
-          </span>
-        </div>
-        <div class="offset-md-1 col-md-2">
-          <span> 
-            Πελαγικά παραγάδια<img class="tropoi_img" src="./img/tropoi_c.png">
-          </span>
-        </div>
-        <div class="offset-md-1 col-md-2">
-          <span >
-            Βιντζότρατα<img class="tropoi_img" src="./img/tropoi_d.png">
-          </span>
-        </div>
+      <div class="col-md-2">
+        <img id="fish2" class="fish-img fish" src="./img/fish_less_dark.png" onclick="this.src=('./img/lithrini.png')">
+        <!-- <span id="fish2" class="text-fish">λυθρίνι</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish3" class="fish-img fish" src="./img/fish_medium.png" onclick="this.src=('./img/safridi.png')">
+        <!-- <span id="fish3" class="text-fish text-fish3">σαφρίδι</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish9" class="fish-img fish" src="./img/fish_dark.png" onclick="this.src=('./img/gauros.png')">
+        <!-- <span id="fish9" class="text-fish">φρίσσα</span> -->
       </div>
     </div>
-    <div id="Diathesi" class="tabcontent">
-      <span class="topright" onclick="closeSubTabs3()">
-          <img src="./img/tick.png">
-      </span>
-      <div class="row categories_tropoi">
-        <div class="col-md-2">
-          <span>
-           Εκφόρτωση<img class="tropoi_img" src="./img/diath_a.png">
-         </span>
-       </div>
-       <div class="offset-md-1 col-md-2">
-        <span>
-          Κεντρική αγορά<img class="tropoi_img" src="./img/diath_b.png">
-        </span>
+    <div class="row sub-categories">
+      <div class="col-md-2">
+        <img id="fish4" class="fish-img fish" src="./img/fish_dark.png" onclick="this.src=('./img/gopa.png')">
+        <!-- <span id="fish4" class="text-fish">γόπα</span> -->
       </div>
-      <div class="offset-md-1 col-md-2">
-        <span> 
-          Τοπική αγορά<img class="tropoi_img" src="./img/diath_c.png">
-        </span>
+      <div class="col-md-2">
+        <img id="fish5" class="fish-img fish" src="./img/fish_medium.png" onclick="this.src=('./img/koutsomoura.png')">
+        <!-- <span id="fish5" class="text-fish">κουτσομούρα</span> -->
       </div>
-      <div class="offset-md-1 col-md-2">
-        <span>
-          Πιάτο καταναλωτή<img class="tropoi_img" src="./img/diath_d.png">
-        </span>
+      <div class="col-md-2">
+        <img id="fish6" class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/barbouni.png')">
+        <!-- <span id="fish6" class="text-fish">μπαρμπούνι</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish7" class="fish-img fish" src="./img/fish_dark.png" onclick="this.src=('./img/ksifias.png')">
+        <!-- <span id="fish7" class="text-fish">ξιφίας</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish8" class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/glwssa.png')">
+        <!-- <span id="fish8" class="text-fish">γλώσσα</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish10" class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/tonos.png')">
+        <!-- <span id="fish10" class="text-fish text-fish10">τόνος</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish11" class="fish-img fish" src="./img/fish_large.png" onclick="this.src=('./img/kolios.png')">
+        <!-- <span id="fish11" class="text-fish text-fish11">κολιός</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish12" class="fish-img fish" src="./img/fish_less_dark.png" onclick="this.src=('./img/bakaliaros.png')">
+        <!-- <span id="fish12" class="text-fish">μπακαλιάρος</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish13" class="fish-img fish" src="./img/fish_less_dark.png" onclick="this.src=('./img/rofos.png')">
+        <!-- <span id="fish13" class="text-fish">ροφός</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish14" class="fish-img fish" src="./img/fish.png" onclick="this.src=('./img/sargos.png')">
+        <!-- <span id="fish14" class="text-fish">σαργός</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish15" class="fish-img fish" src="./img/fish_large.png" onclick="this.src=('./img/xtapodi.png')">
+        <!-- <span id="fish15" class="text-fish text-fish15">χταπόδι</span> -->
       </div>
     </div>
   </div>
-  <div id="Pleon" class="tabcontent">
+  <div id="Tropoi" class="tabcontent">
     <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
-    <span class="topright" onclick="closeSubTabs4()">
-          <img src="./img/tick.png">
+    <span class="topright" onclick="closeSubTabs2()">
+      <img src="./img/tick.png">
+    </span>
+    <div class="row categories_tropoi">
+      <div class="col-md-2">
+        <span>
+         Μηχανότρατα<img class="tropoi_img" src="./img/tropoi_a.png">
+       </span>
+     </div>
+     <div class="offset-md-1 col-md-2">
+      <span>
+        Γρι γρι<img class="tropoi_img" src="./img/tropoi_b.png">
       </span>
-    <div class="row categories_pleon">
-      <div class="offset-md-3 col-md-2">
-        <img class="pleon_img" src="./img/plus.png">
-        <div class="row">
-          <h1 class="pleon_title">Πλεονεκτήματα</h1>
-        </div>
-        <div class="row">
-          <h3 class="pleon_title pleon_subtitle">
-            •Φρεσκότητα<br>•Μεγάλη ποικιλία ειδών<br>•Άμεση επαφή με τον πωλητή
-          </h3>
-        </div>
-
+    </div>
+    <div class="offset-md-1 col-md-2">
+      <span> 
+        Πελαγικά παραγάδια<img class="tropoi_img" src="./img/tropoi_c.png">
+      </span>
+    </div>
+    <div class="offset-md-1 col-md-2">
+      <span >
+        Βιντζότρατα<img class="tropoi_img" src="./img/tropoi_d.png">
+      </span>
+    </div>
+  </div>
+</div>
+<div id="Diathesi" class="tabcontent">
+  <span class="topright" onclick="closeSubTabs3()">
+    <img src="./img/tick.png">
+  </span>
+  <div class="row categories_tropoi">
+    <div class="col-md-2">
+      <span>
+       Εκφόρτωση<img class="tropoi_img" src="./img/diath_a.png">
+     </span>
+   </div>
+   <div class="offset-md-1 col-md-2">
+    <span>
+      Κεντρική αγορά<img class="tropoi_img" src="./img/diath_b.png">
+    </span>
+  </div>
+  <div class="offset-md-1 col-md-2">
+    <span> 
+      Τοπική αγορά<img class="tropoi_img" src="./img/diath_c.png">
+    </span>
+  </div>
+  <div class="offset-md-1 col-md-2">
+    <span>
+      Πιάτο καταναλωτή<img class="tropoi_img" src="./img/diath_d.png">
+    </span>
+  </div>
+</div>
+</div>
+<div id="Pleon" class="tabcontent">
+  <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
+  <span class="topright" onclick="closeSubTabs4()">
+    <img src="./img/tick.png">
+  </span>
+  <div class="row categories_pleon">
+    <div class="offset-md-3 col-md-2">
+      <img class="pleon_img" src="./img/plus.png">
+      <div class="row">
+        <h1 class="pleon_title">Πλεονεκτήματα</h1>
       </div>
-      <div class="offset-md-2 col-md-2">
-        <img class="pleon_img" src="./img/minus.png">
-        <div class="row">
-          <h1 class="pleon_title">Μειονεκτήματα</h1>
-        </div>
-        <div class="row">
-          <h3 class="pleon_title pleon_subtitle">
-            •Επιπτώσεις των αλιευτικών εργαλείων<br>σε μη εμπορικά είδη.<br>•Επιπτώσεις των αλιευτικών εργαλείων<br>στο περιβάλλον.            
-          </h3>
-        </div>
+      <div class="row">
+        <h3 class="pleon_title pleon_subtitle">
+          •Φρεσκότητα<br>•Μεγάλη ποικιλία ειδών<br>•Άμεση επαφή με τον πωλητή
+        </h3>
+      </div>
+
+    </div>
+    <div class="offset-md-2 col-md-2">
+      <img class="pleon_img" src="./img/minus.png">
+      <div class="row">
+        <h1 class="pleon_title">Μειονεκτήματα</h1>
+      </div>
+      <div class="row">
+        <h3 class="pleon_title pleon_subtitle">
+          •Επιπτώσεις των αλιευτικών εργαλείων<br>σε μη εμπορικά είδη.<br>•Επιπτώσεις των αλιευτικών εργαλείων<br>στο περιβάλλον.            
+        </h3>
       </div>
     </div>
   </div>
+</div>
 
 
 
@@ -328,6 +369,7 @@
       <script src="./js/ie10-viewport-bug-workaround.js"></script>
       <script src="./js/jquery-3.2.1.min.js"></script>
       <script src="./js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
       <script  src="./js/aquaspace.js"></script>
       <script  src="./js/tabs.js"></script>
     </body>

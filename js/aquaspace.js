@@ -63,9 +63,17 @@ $('#alieia_container').click(function () {
 		});
 	}
 });
-
+var show=0;
 $('#udato_container').click(function () {
-	if (next > 1 ){
+
+	if ((show == 0) && (next>1)){
+		$(".bam").attr("class","ml11");
+		$(".letters").fadeIn('fast');
+		$(".line").fadeIn('fast');
+		$(".Tokyo").html('υδατοκαλλι&#941;ργεια');
+		show = 1;
+	}
+	else if((next > 1) && (show>0)){
 		$(".Paris").removeAttr('id');
 		$(".Tokyo").fadeIn('fast');
 		$(".Tokyo").attr('id','defaultOpen');
@@ -304,3 +312,41 @@ function changeImageChicken(){
 		document.getElementById("chicken").src = "./img/chicken.png";    
 	}
 }
+
+
+
+// Wrap every letter in a span
+$('.ml11 .letters').each(function(){
+	$(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+});
+
+anime.timeline({loop: true})
+.add({
+	targets: '.ml11 .line',
+	scaleY: [0,1],
+	opacity: [0.5,1],
+	easing: "easeOutExpo",
+	duration: 700
+})
+.add({
+	targets: '.ml11 .line',
+	translateX: [0,$(".ml11 .letters").width()],
+	easing: "easeOutExpo",
+	duration: 700,
+	delay: 100
+}).add({
+	targets: '.ml11 .letter',
+	opacity: [0,1],
+	easing: "easeOutExpo",
+	duration: 600,
+	offset: '-=775',
+	delay: function(el, i) {
+		return 34 * (i+1)
+	}
+}).add({
+	targets: '.ml11',
+	opacity: 0,
+	duration: 1000,
+	easing: "easeOutExpo",
+	delay: 1000
+});
