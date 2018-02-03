@@ -69,6 +69,7 @@ $('#alieia_container').click(function () {
 });
 var show=0;
 $('#udato_container').click(function () {
+	$(".exodos").fadeOut('fast');
 
 	if ((show == 0) && (next>1)){
 		$(".bam").attr("class","ml11");
@@ -119,6 +120,7 @@ function closeTabs3(){
 	$("#aqua-tabs").fadeOut('fast', function(){
 		$(".categories").fadeIn('fast');
 		$("#udato").attr("src","./img/tick.png");
+		$('.exodos').fadeIn('slow');
 		finish = 3;
 	});
 }
@@ -185,6 +187,67 @@ $('#sun_al').click(function(){
 	}
 });
 
+
+var sub_ud_next=0;
+$('#ektref_ud').click(function(){
+	if(sub_ud_next > -1 ){
+		$(".Paris").removeAttr('id');
+		$(".London").removeAttr('id');
+		$(".Tokyo").removeAttr('id');
+		$(".Koina_ek").attr('id','defaultOpen');
+		$("#udato-tabs").fadeIn('fast', function(){
+			$("#aqua-tabs").slideUp('slow');	
+		});
+		document.getElementById('defaultOpen').click();
+		sub_ud_next = 1;
+	}
+});
+
+$('#diadikasia_ud').click(function(){
+	if (sub_ud_next > 0){
+		$(".Paris").removeAttr('id');
+		$(".London").removeAttr('id');
+		$(".Tokyo").removeAttr('id');
+		$(".Diadikasia").fadeIn('fast');
+		$(".Diadikasia").attr('id','defaultOpen');
+		$("#udato-tabs").fadeIn('fast', function(){
+			$("#aqua-tabs").slideUp('slow');
+		});
+		document.getElementById('defaultOpen').click();
+		sub_ud_next = 2;
+	}
+});
+
+$('#diath_ud').click(function(){
+	if (sub_ud_next > 1){
+		$(".Paris").removeAttr('id');
+		$(".London").removeAttr('id');
+		$(".Tokyo").removeAttr('id');
+		$(".Diathesi_ud").fadeIn('fast');
+		$(".Diathesi_ud").attr('id','defaultOpen');
+		$("#udato-tabs").fadeIn('fast', function(){
+			$("#aqua-tabs").slideUp('slow');
+		});
+		document.getElementById('defaultOpen').click();
+		sub_ud_next = 3;
+	}
+});
+
+$('#sun_ud').click(function(){
+	if (sub_ud_next > 2){
+		$(".Paris").removeAttr('id');
+		$(".London").removeAttr('id');
+		$(".Tokyo").removeAttr('id');
+		$(".Pleon_ud").fadeIn('fast');
+		$(".Pleon_ud").attr('id','defaultOpen');
+		$("#udato-tabs").fadeIn('fast', function(){
+			$("#aqua-tabs").slideUp('slow');
+		});
+		document.getElementById('defaultOpen').click();
+		sub_ud_next = 4;
+	}
+});
+
 var finishSub = 0;
 function closeSubTabs1(){
 	$("#alieia-tabs").fadeOut('fast', function(){
@@ -243,6 +306,68 @@ function closeSubTabs4(){
 	});
 }
 
+
+
+
+var finishUdSub = 0;
+function closeSubUdTabs1(){
+	$("#udato-tabs").fadeOut('fast', function(){
+		$(".Koina_ek").removeAttr('id');
+		$(".Tokyo").attr('id','defaultOpen');
+		$("#aqua-tabs").fadeIn('fast');
+		if (finishUdSub==0) {
+			$("#ektref_img").attr("src","./img/tick.png");
+			$("#diadikasia_img").attr("src","./img/question.png");
+			finishUdSub=1;
+		}
+		document.getElementById('defaultOpen').click();
+		
+	});
+}
+
+function closeSubUdTabs2(){
+	$("#udato-tabs").fadeOut('fast', function(){
+		$(".Diadikasia").removeAttr('id');
+		$(".Tokyo").attr('id','defaultOpen');
+		$("#aqua-tabs").fadeIn('fast');
+		if (finishUdSub==1) {
+			$("#diadikasia_img").attr("src","./img/tick.png");
+			$("#diath_ud_img").attr("src","./img/question.png");
+			finishUdSub=2;
+		}
+		document.getElementById('defaultOpen').click();
+		
+	});
+}
+
+function closeSubUdTabs3(){
+	$("#udato-tabs").fadeOut('fast', function(){
+		$(".Diathesi_ud").removeAttr('id');
+		$(".Tokyo").attr('id','defaultOpen');
+		$("#aqua-tabs").fadeIn('fast');
+		if (finishUdSub==2) {
+			$("#diath_ud_img").attr("src","./img/tick.png");
+			$("#sun_ud_img").attr("src","./img/question.png");
+			finishUdSub=3;
+		}
+		document.getElementById('defaultOpen').click();
+		
+	});
+}
+
+function closeSubUdTabs4(){
+	$("#udato-tabs").fadeOut('fast', function(){
+		$(".Pleon_ud").removeAttr('id');
+		$(".Tokyo").attr('id','defaultOpen');
+		$("#aqua-tabs").fadeIn('fast');
+		$("#sun_ud_img").attr("src","./img/tick.png");
+		$(".close_Paris").fadeIn('fast');
+		document.getElementById('defaultOpen').click();
+		$('.closeTabs3').fadeIn('fast');
+		finishUdSub=4;
+	});
+}
+
 var ud_show=0;
 function ud_show_text(){
 	if (ud_show ==0 ){
@@ -254,12 +379,7 @@ function ud_show_text(){
 	}
 }
 
-
-
-
-
-
-$('.carousel').on('slid.bs.carousel', function (evt) {
+$('.introMenuCar').on('slid.bs.carousel', function (evt) {
 	var step = $(evt.relatedTarget).index();
 	var before = step -1;
 	var after = step+1;

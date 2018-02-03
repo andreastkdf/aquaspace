@@ -365,6 +365,12 @@ body {
 	width: 12% !important;
 }
 
+.sub-ud{
+	margin-right: 6% !important;
+	width: 17% !important;
+}
+
+
 #Koina{
 	background-color: #c7c8ca;
 }
@@ -575,7 +581,70 @@ body {
 }
 
 
+.categories_img_diath{
+	margin: 20% 0px 20% 62%;
+	height: 250px;
+	display: block;
+}
 
+.poikilia{
+	padding-left: 16%;
+}
+
+.ud_slide{
+	padding-top: 5%;
+	padding-left: 18%;
+}
+
+.ud_slide_img{
+	height: 85%;
+	max-height: 1043px;
+}
+
+
+.caption_diath{
+	padding-left: 17%;
+	width: 797%;
+	padding-right: 652%;
+	margin-left: 32%;
+	font-size: 25px;
+}
+
+.caption_2{
+	margin-left: 82%;
+	margin-right: 82%;
+}
+
+
+#Koina_ek{
+	background-color: #c7c8ca;
+}
+
+#Diadikasia{
+	background-color: #c7c8ca;
+}
+
+#Diathesi_ud{
+	background-color: #c7c8ca;
+}
+
+#Pleon_ud{
+	background-color: #c7c8ca;
+}
+
+
+.caption_3{
+	padding-left: 29%;
+}
+
+
+
+.exodos{
+	display: none;
+	padding-top: 15%;
+    padding-left: 44%;
+    width: 62%;
+}
 
 .ml11 {
  /* font-weight: 900;

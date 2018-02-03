@@ -64,80 +64,168 @@
       </div>
     </div>
 
-    <div id="alieia-tabs">
+    <div id="udato-tabs">
       <div class="tab alieia">
-        <button class="tablinks sub-alieia" onclick="openCity(event, 'Koina')" id="defaultOpen">Κοινά αλιεύματα</button>
-        <button class="tablinks sub-alieia" onclick="openCity(event, 'Tropoi')" >Τρόποι αλίευσης</button>
-        <button class="tablinks sub-alieia" onclick="openCity(event, 'Diathesi')" >∆ιάθεση στον καταναλωτή</button>
-        <button class="tablinks sub-alieia" onclick="openCity(event, 'Pleon')" >Πλεονεκτήματα μειονεκτήματα</button>
+        <button class="tablinks sub-ud" onclick="openCity(event, 'Koina_ek')" id="defaultOpen">Κοινα εκτρεφόμενα είδη</button>
+        <button class="tablinks sub-ud" onclick="openCity(event, 'Diadikasia')" style="display:none">∆ιαδικασία<br>παραγωγής</button>
+        <button class="tablinks sub-ud" onclick="openCity(event, 'Diathesi_ud')" style="display:none">∆ιάθεση στον καταναλωτή</button>
+        <button class="tablinks sub-ud" onclick="openCity(event, 'Pleon_ud')" style="display:none">Πλεονεκτήματα μειονεκτήματα</button>
       </div>
-      <div id="Koina" class="tabcontent">
-        <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
-        <div class="row ">
-          <div id="udato_fish1" class="sub_udato_fish">
-            <img class="udato_fish" src="./img/fish_large.png">
-          </div>
-          <div id="udato_fish2" class="sub_udato_fish">
-            <img class="udato_fish" src="./img/fish.png">
-          </div>
+      <div id="Koina_ek" class="tabcontent">
+       <span  class="topright" onclick="closeSubUdTabs1()">
+         <img src="./img/tick.png">
+       </span>
+       <div class="row ">
+        <div id="udato_fish1" class="sub_udato_fish">
+          <img class="udato_fish" src="./img/fish_large.png" onclick="this.src=('./img/fagkri.png')">
         </div>
-        <div class="row second_row">
-          <div id="udato_fish3" class="sub_udato_fish">
-            <img class="udato_fish" src="./img/fish_dark.png">
-          </div>
-          <div id="udato_fish4" class="sub_udato_fish">
-            <img class="udato_fish" src="./img/fish_dark.png">
-          </div>
-        </div>
-        <div class="row third_row">
-          <button type="button" class="btn btn-warning aquaButton udato_button" id="ud_showText" onclick="ud_show_text()">Περισσότερα
-          </button>
-        </div>
-        <div class="row forth_row">
-          <div id="udato_fish5" class="sub_udato_fish">
-            <img class="udato_fish" src="./img/fish.png">
-          </div>
-          <div id="udato_fish6" class="sub_udato_fish">
-            <img class="udato_fish" src="./img/fish_less_dark.png">
-          </div>
-        </div>
-        <div class="row ud_more_text">Τα κύρια καλλιεργούμενα είδη, στην Ελλάδα και τη Μεσόγειο είναι η τσιπούρα και το λαβράκι, αποτελώντας περίπου το 95% της συνολικής παραγωγής. Πλέον υλοποιείτε μία προσπάθεια αύξησης του αριθμού των καλλιεργούμενων ειδών με την προσθήκη νέων, όπως ο κρανιός, το τσιπούρα λαβράκι φαγκρί, η συναγρίδα κ.α. Το φαγκρί αποτελεί ένα εκλεκτό έδεσμα σε πολλά ελληνικά εστιατόρια, παρόλα αυτά αποτελεί ένα αρκετά ακριβό αλίευμα. Η πετυχημένη εκτροφή του θα οδηγήσει σε μείωση τόσο της τιμής όσο και της αλι- ευτικής πίεσης που δέχεται το είδος αυτό.</div>
-      </div>
-      <div id="Tropoi" class="tabcontent">
-        <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
-        <div class="row categories_tropoi">
-          <div class="col-md-2">
-            <span>
-             Μηχανότρατα<img class="categories-img tropoi" src="./img/tropoi_a.png">
-           </span>
-         </div>
-         <div class="offset-md-1 col-md-2">
-          <span style="margin-left: 8%;">
-            Γρι γρι<img class="categories-img tropoi" src="./img/tropoi_b.png">
-          </span>
-        </div>
-        <div class="offset-md-1 col-md-2">
-          <span style="margin-left: -10%;"> 
-            Πελαγικά παραγάδια<img class="categories-img tropoi" src="./img/tropoi_c.png">
-          </span>
-        </div>
-        <div class="offset-md-1 col-md-2">
-          <span style="margin-left: 1%;">
-            Βιντζότρατα<img class="categories-img tropoi" src="./img/tropoi_d.png">
-          </span>
+        <div id="udato_fish2" class="sub_udato_fish">
+          <img class="udato_fish" src="./img/fish.png" onclick="this.src=('./img/mitaki.png')">
         </div>
       </div>
+      <div class="row second_row">
+        <div id="udato_fish3" class="sub_udato_fish">
+          <img class="udato_fish" src="./img/fish_dark.png" onclick="this.src=('./img/milokopi.png')">
+        </div>
+        <div id="udato_fish4" class="sub_udato_fish">
+          <img class="udato_fish" src="./img/fish_dark.png" onclick="this.src=('./img/tsipoura.png')">
+        </div>
+      </div>
+      <div class="row third_row">
+        <button type="button" class="btn btn-warning aquaButton udato_button" id="ud_showText" onclick="ud_show_text()">Περισσότερα
+        </button>
+      </div>
+      <div class="row forth_row">
+        <div id="udato_fish5" class="sub_udato_fish">
+          <img class="udato_fish" src="./img/fish.png" onclick="this.src=('./img/lavraki.png')">
+        </div>
+        <div id="udato_fish6" class="sub_udato_fish">
+          <img class="udato_fish" src="./img/fish_less_dark.png" onclick="this.src=('./img/sinagrida.png')">
+        </div>
+      </div>
+      <div class="row ud_more_text">Τα κύρια καλλιεργούμενα είδη, στην Ελλάδα και τη Μεσόγειο είναι η τσιπούρα και το λαβράκι, αποτελώντας περίπου το 95% της συνολικής παραγωγής. Πλέον υλοποιείτε μία προσπάθεια αύξησης του αριθμού των καλλιεργούμενων ειδών με την προσθήκη νέων, όπως ο κρανιός, το τσιπούρα λαβράκι φαγκρί, η συναγρίδα κ.α. Το φαγκρί αποτελεί ένα εκλεκτό έδεσμα σε πολλά ελληνικά εστιατόρια, παρόλα αυτά αποτελεί ένα αρκετά ακριβό αλίευμα. Η πετυχημένη εκτροφή του θα οδηγήσει σε μείωση τόσο της τιμής όσο και της αλι- ευτικής πίεσης που δέχεται το είδος αυτό.</div>
     </div>
-    <div id="Diathesi" class="tabcontent">
-      <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
-
-    </div>
-    <div id="Pleon" class="tabcontent">
-      <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
-      <h3>Tokyo</h3>
-      <p>Tokyo is the capital of Japan.</p>
+    <div id="Diadikasia" class="tabcontent">
+      <span  class="topright" onclick="closeSubUdTabs2()">
+       <img src="./img/tick.png">
+     </span>
+     <div class="row ud_slide">
+      <div class="col-md-12">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+         <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-block w-100" alt="First slide">
+              <img class="ud_slide_img" src="./img/diadi_slide1.png">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100" alt="Second slide">
+              <img class="ud_slide_img" src="./img/diadi_slide2.png">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100" alt="Third slide">
+              <img class="ud_slide_img" src="./img/diadi_slide3.png">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100" alt="Fourth slide">
+              <img class="ud_slide_img" src="./img/diadi_slide4.png">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100" alt="Fifth slide">
+              <img class="ud_slide_img" src="./img/diadi_slide5.png">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100" alt="Sixth slide">
+              <img class="ud_slide_img" src="./img/diadi_slide6.png">
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
   </div>
+</div>
+<div id="Diathesi_ud" class="tabcontent">
+  <span  class="topright" onclick="closeSubUdTabs3()">
+   <img src="./img/tick.png">
+ </span>
+ <div class="row sub-categories">
+  <div class="col-md-2">
+    <figure>
+      <img class="categories_img_diath" src="./img/poiotikos.png">
+      <figcaption class="caption_diath">
+        ∆ιάθεση στον καταναλωτή μετά απο<br>ποιοτικούς ελέγχους και εφαρμογή<br>συστημάτων πιστοποίησης.
+      </figcaption>
+    </figure>
+  </div>
+  <div class="col-md-2">
+    <figure>
+      <img class="categories_img_diath poikilia" src="./img/poikilia.png">
+      <figcaption class="caption_diath caption_2">
+        Ποικιλία επιλογών προϊόντος:<br>•Ολόκληρο ψάρι<br>•Φιλέτο<br>•Φέτα
+      </figcaption>
+    </figure>
+  </div>
+  <div class="offset-md-2 col-md-2">
+    <figure>
+      <img class="categories_img_diath" src="./img/diadikasia.png">
+      <figcaption class="caption_diath caption_3">
+        ∆ιαδικασία μεταφοράς ψαριών από μονάδες σε ιχθυαγορές
+      </figcaption>
+    </figure>
+  </div>
+
+</div>
+</div>
+<div id="Pleon_ud" class="tabcontent">
+  <span  class="topright" onclick="closeSubUdTabs4()">
+   <img src="./img/tick.png">
+ </span>
+ <div class="row categories_pleon">
+  <div class="offset-md-3 col-md-2">
+    <img class="pleon_img" src="./img/plus.png">
+    <div class="row">
+      <h1 class="pleon_title">Πλεονεκτήματα</h1>
+    </div>
+    <div class="row">
+      <h3 class="pleon_title pleon_subtitle">
+        •Παροχή πρωτεϊνών με χαμηλότερο κόστος για τον καταναλωτή.<br>•Χαμηλότερο και πιο τοπικό οικολογικό κόστος.<br>•Αντιμετώπιση υπεραλίευσης.<br>
+        •∆ημιουργία μιας κοινωνικο-οικονομικής δομής (εργαζόμενοι, κυρίως σε περιοχές που
+        εξαρτώνται από την αλιεία).<br>•Η μοναδική παραγωγική δραστηριότητα
+        σε ακατοίκητα νησιά και βραχονησίδες.
+      </h3>
+    </div>
+
+  </div>
+  <div class="offset-md-2 col-md-2">
+    <img class="pleon_img" src="./img/minus.png">
+    <div class="row">
+      <h1 class="pleon_title">Μειονεκτήματα</h1>
+    </div>
+    <div class="row">
+      <h3 class="pleon_title pleon_subtitle">
+        •Μικρός αριθμός εκτρεφόμενων ειδών.<br>•Σύγκρουση συμφερόντων με άλλες δραστηριότητες (π.χ. τουρισμός).<br>•Χρησιμοποίηση αλιευμάτων για θρέψη εκτρεφόμενων
+        ειδών (ιχθυάλευρa).            
+      </h3>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</div>
+</div>
 </div><!-- /.container -->
     <!-- Bootstrap core JavaScript
       ================================================== -->
