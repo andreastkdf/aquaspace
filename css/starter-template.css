@@ -470,6 +470,27 @@ body {
 	height: 100%;
 	text-align: center;
 	font-size: 26px;
+	width: 100%;
+}
+
+.comment_tropoi{
+	position: fixed;
+	margin-top: 22%;
+	text-align: left;
+	width: 53%;
+	margin-left: 15%;
+	background-color: #3eb3d652;
+	padding: 1% 1% 1% 1%;
+	font-size: 92%;
+	border-radius: 11px;
+}
+
+.show_comment{
+	font-size: 82%;
+	width: 60%;
+	padding: 4px 10px;
+	margin-top: 5px;
+	cursor: pointer;
 }
 
 #Diathesi{
@@ -642,8 +663,8 @@ body {
 .exodos{
 	display: none;
 	padding-top: 15%;
-    padding-left: 44%;
-    width: 62%;
+	padding-left: 44%;
+	width: 62%;
 }
 
 .ml11 {

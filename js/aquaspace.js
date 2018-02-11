@@ -248,6 +248,11 @@ $('#sun_ud').click(function(){
 	}
 });
 
+
+
+
+
+
 var finishSub = 0;
 function closeSubTabs1(){
 	$("#alieia-tabs").fadeOut('fast', function(){
@@ -306,8 +311,55 @@ function closeSubTabs4(){
 	});
 }
 
+function show_comment1(){
+	$('.comment_tropoi').fadeIn('fast');
+	$('.tropoi_4').fadeOut('fast');
+	$('.tropoi_3').fadeOut('fast');
+	$('.tropoi_2').fadeOut('fast');
+	$('.tropoi_1').fadeIn('fast');
+	$('.mixano').css('filter', 'grayscale(0%)');
+	$('.grigri').css('filter', 'grayscale(100%)');
+	$('.pelagika').css('filter', 'grayscale(100%)');
+	$('.vinzi').css('filter', 'grayscale(100%)');
 
+}
 
+function show_comment2(){
+	$('.comment_tropoi').fadeIn('fast');
+	$('.tropoi_4').fadeOut('fast');
+	$('.tropoi_3').fadeOut('fast');
+	$('.tropoi_1').fadeOut('fast');
+	$('.tropoi_2').fadeIn('fast');
+	$('.mixano').css('filter', 'grayscale(100%)');
+	$('.grigri').css('filter', 'grayscale(0%)');
+	$('.pelagika').css('filter', 'grayscale(100%)');
+	$('.vinzi').css('filter', 'grayscale(100%)');
+}
+
+function show_comment3(){
+	$('.comment_tropoi').fadeIn('fast');
+	$('.tropoi_4').fadeOut('fast');
+	$('.tropoi_1').fadeOut('fast');
+	$('.tropoi_2').fadeOut('fast');
+	$('.tropoi_3').fadeIn('fast');
+	$('.mixano').css('filter', 'grayscale(100%)');
+	$('.grigri').css('filter', 'grayscale(100%)');
+	$('.pelagika').css('filter', 'grayscale(0%)');
+	$('.vinzi').css('filter', 'grayscale(100%)');
+
+}
+
+function show_comment4(){
+	$('.comment_tropoi').fadeIn('fast');
+	$('.tropoi_1').fadeOut('fast');
+	$('.tropoi_3').fadeOut('fast');
+	$('.tropoi_2').fadeOut('fast');
+	$('.tropoi_4').fadeIn('fast');
+	$('.mixano').css('filter', 'grayscale(100%)');
+	$('.grigri').css('filter', 'grayscale(100%)');
+	$('.pelagika').css('filter', 'grayscale(100%)');
+	$('.vinzi').css('filter', 'grayscale(0%)');
+}
 
 var finishUdSub = 0;
 function closeSubUdTabs1(){
