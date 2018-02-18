@@ -2,6 +2,36 @@
 AQUASPACE JS
 Copyright (c) 2017 Andreas KOSTAKIS;  */
 
+var ud_sl=1;
+$(".ud_next").click(function(){
+	if (ud_sl == 1) {
+		$("#ud1").fadeOut('fast');
+		ud_sl = 2;
+		return;
+	}
+	if (ud_sl == 2) {
+		$("#ud2").fadeOut('fast');
+		ud_sl = 3;
+		return;
+	}
+	if (ud_sl == 3) {
+		$("#ud3").fadeOut('fast');
+		ud_sl = 4;
+		return;
+	}
+	if (ud_sl == 4) {
+		$("#ud4").fadeOut('fast');
+		ud_sl = 5;
+		return;
+	}
+	if (ud_sl == 5) {
+		$("#ud5").fadeOut('fast');
+		ud_sl = 1;
+		$(".ud_next").fadeOut('fast');
+		return;
+	}
+});
+
 
 $("#logo").click(function(){
 	$("#logo").fadeOut('300');

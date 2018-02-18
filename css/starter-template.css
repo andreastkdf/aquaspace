@@ -99,21 +99,21 @@ body {
 	font-family: "futuragreekbk";	
 	text-align: left;
 	font-size: 145%;
-	padding-top: 29%;
+	padding-top: 270px;
 	display: ;
 }
 #textSlide1{
 	font-family: "futuragreekbk";	
 	text-align: left;
 	font-size: 145%;
-	padding-top: 26%;
+	padding-top: 238px;
 	display: none;
 }
 #textSlide2{
 	font-family: "futuragreekbk";	
 	text-align: left;
 	font-size: 145%;
-	padding-top: 36%;
+	padding-top: 337px;
 	display: none;
 }
 
@@ -613,15 +613,22 @@ body {
 }
 
 .ud_slide{
-	padding-top: 5%;
-	padding-left: 18%;
+	padding-top: 6%;
+	margin-left: 22%;
 }
 
 .ud_slide_img{
-	height: 85%;
-	max-height: 1043px;
+	width: 75%;
 }
 
+
+.ud_slide_next{
+	position: fixed;
+	width: 46%;
+	margin-left: 8%;
+	margin-top: 8%;
+}
+}
 
 .caption_diath{
 	padding-left: 17%;
@@ -632,10 +639,16 @@ body {
 }
 
 .caption_2{
-	margin-left: 82%;
-	margin-right: 82%;
+	padding-left: 16%;
+	position: fixed;
+	font-size: 24px;
 }
 
+.caption_3{
+	padding-left: 9%;
+	font-size: 24px;
+	position: fixed;
+}
 
 #Koina_ek{
 	background-color: #c7c8ca;
@@ -652,13 +665,6 @@ body {
 #Pleon_ud{
 	background-color: #c7c8ca;
 }
-
-
-.caption_3{
-	padding-left: 29%;
-}
-
-
 
 .exodos{
 	display: none;
@@ -698,4 +704,16 @@ body {
 .ml11 .letter {
 	display: inline-block;
 	line-height: 1em;
+}
+
+/*Bugs fixes*/
+
+.carousel-control-next, .carousel-control-prev {
+	bottom: 22%;
+}
+
+
+.rising{
+	padding-top: 33px;
+	padding-bottom: 33px;
 }
