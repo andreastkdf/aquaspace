@@ -84,7 +84,6 @@ body {
 	margin-top: 5%;
 }
 
-
 .aquaButton{
 	font-family: 'futuragreekbk';
 	background-color: #e4a818 !important;
@@ -163,19 +162,20 @@ body {
 }
 
 .under_go{
-	position: absolute;
-	display: block;
-	padding-top: 2%;
-	height: 153% !important;
-	margin-top: 8%;
-	width: 100%;
-	text-align: left;
-	padding-left: 27%;
-	font-family: 'futuragreekbk';
-	background: #c7c8ca;
-	font-size: 22px;
-	border-bottom-left-radius: 12px;
-	border-bottom-right-radius: 12px;
+    position: absolute;
+    padding-top: 2%;
+    height: 153% !important;
+    margin-top: 8%;
+    margin-left: -50% !important;
+    width: 100%;
+    text-align: left;
+    padding-left: 27%;
+    font-family: 'futuragreekbk';
+    background: #c7c8ca;
+    font-size: 22px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: none;
 }
 .carousel-control {
 	position: absolute;
@@ -620,7 +620,6 @@ body {
 .ud_slide_img{
 	width: 75%;
 }
-
 
 .ud_slide_next{
 	position: fixed;

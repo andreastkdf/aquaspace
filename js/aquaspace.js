@@ -6,6 +6,7 @@ var ud_sl=1;
 $(".ud_next").click(function(){
 	if (ud_sl == 1) {
 		$("#ud1").fadeOut('fast');
+		$(".carousel-control-prev-icon").fadeIn('fast');
 		ud_sl = 2;
 		return;
 	}
@@ -31,7 +32,6 @@ $(".ud_next").click(function(){
 		return;
 	}
 });
-
 
 $("#logo").click(function(){
 	$("#logo").fadeOut('300');
@@ -64,6 +64,8 @@ $('.endIntro').click(function () {
 	});
 });  
 
+
+
 $('.start_button').click(function () {
 	$(".go_button").fadeIn('slow', function(){
 		$(".start").fadeOut('fast');
@@ -71,6 +73,17 @@ $('.start_button').click(function () {
 	});
 });
 
+var go_show_text=0;
+$(".go_button").click(function() {
+	if (go_show_text == 0){
+		$(".under_go").fadeIn('fast');
+		go_show_text = 1;
+		return;
+	}
+	if (go_show_text == 1) {
+		$(".go_button").attr("href","./firstMenu.html");
+	}
+});
 
 var next=0;
 $('#xersaies_container').click(function () {
@@ -295,7 +308,7 @@ function closeSubTabs1(){
 			finishSub=1;
 		}
 		document.getElementById('defaultOpen').click();
-		
+
 	});
 }
 
@@ -310,7 +323,7 @@ function closeSubTabs2(){
 			finishSub=2;
 		}
 		document.getElementById('defaultOpen').click();
-		
+
 	});
 }
 
@@ -325,7 +338,7 @@ function closeSubTabs3(){
 			finishSub=3;
 		}
 		document.getElementById('defaultOpen').click();
-		
+
 	});
 }
 
@@ -403,7 +416,7 @@ function closeSubUdTabs1(){
 			finishUdSub=1;
 		}
 		document.getElementById('defaultOpen').click();
-		
+
 	});
 }
 
@@ -418,7 +431,7 @@ function closeSubUdTabs2(){
 			finishUdSub=2;
 		}
 		document.getElementById('defaultOpen').click();
-		
+
 	});
 }
 
@@ -433,7 +446,7 @@ function closeSubUdTabs3(){
 			finishUdSub=3;
 		}
 		document.getElementById('defaultOpen').click();
-		
+
 	});
 }
 
