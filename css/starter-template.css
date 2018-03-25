@@ -162,20 +162,20 @@ body {
 }
 
 .under_go{
-    position: absolute;
-    padding-top: 2%;
-    height: 153% !important;
-    margin-top: 8%;
-    margin-left: -50% !important;
-    width: 100%;
-    text-align: left;
-    padding-left: 27%;
-    font-family: 'futuragreekbk';
-    background: #c7c8ca;
-    font-size: 22px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    display: none;
+	position: absolute;
+	padding-top: 2%;
+	height: 153% !important;
+	margin-top: 8%;
+	margin-left: -50% !important;
+	width: 100%;
+	text-align: left;
+	padding-left: 27%;
+	font-family: 'futuragreekbk';
+	background: #c7c8ca;
+	font-size: 22px;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	display: none;
 }
 .carousel-control {
 	position: absolute;
@@ -627,20 +627,34 @@ body {
 	margin-left: 8%;
 	margin-top: 8%;
 }
+
+.here{
+	overflow: inherit;
 }
 
-.caption_diath{
-	padding-left: 17%;
-	width: 797%;
-	padding-right: 652%;
-	margin-left: 32%;
-	font-size: 25px;
-}
-
-.caption_2{
-	padding-left: 16%;
+.ud_slide_previous{
 	position: fixed;
-	font-size: 24px;
+	width: 46%;
+	margin-left: -130%;
+	margin-top: 8%;
+	display: none;
+}
+
+#p5{
+	margin-left: -55%;
+}
+
+.caption_diath {
+    width: 160%;
+    padding-right: 0%;
+    margin-left: 0%;
+    font-size: 25px;
+}
+
+.caption_2 {
+    padding-left: 16%;
+    position: fixed;
+    font-size: 24px;
 }
 
 .caption_3{

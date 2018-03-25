@@ -7,31 +7,59 @@ $(".ud_next").click(function(){
 	if (ud_sl == 1) {
 		$("#ud1").fadeOut('fast');
 		$(".carousel-control-prev-icon").fadeIn('fast');
+		$(".carousel-control-prev").fadeIn('fast');
+		$("#p1").fadeIn('fast');
 		ud_sl = 2;
 		return;
 	}
 	if (ud_sl == 2) {
 		$("#ud2").fadeOut('fast');
+		$("#p2").fadeIn('fast');
 		ud_sl = 3;
 		return;
 	}
 	if (ud_sl == 3) {
 		$("#ud3").fadeOut('fast');
+		$("#p3").fadeIn('fast');
 		ud_sl = 4;
 		return;
 	}
 	if (ud_sl == 4) {
 		$("#ud4").fadeOut('fast');
+		$("#p4").fadeIn('fast');
 		ud_sl = 5;
 		return;
 	}
 	if (ud_sl == 5) {
+		ud_sl = 6;
 		$("#ud5").fadeOut('fast');
-		ud_sl = 1;
+		$("#p5").fadeIn('fast');
 		$(".ud_next").fadeOut('fast');
 		return;
 	}
 });
+
+$(".ud_prev").click(function(){
+	ud_sl = ud_sl -1 ;
+	$(".ud_slide_previous").fadeOut('slow');
+	if (ud_sl ==1){
+		$(".carousel-control-prev-icon").fadeOut('fast');
+		$(".carousel-control-prev").fadeOut('fast');
+
+	}else{
+		$(".carousel-control-prev-icon").fadeIn('fast');
+		$(".carousel-control-prev").fadeIn('fast');
+	}
+	$(".ud_next").fadeIn('fast');
+	$("#ud1").fadeIn('fast');
+	$("#ud2").fadeIn('fast');
+	$("#ud3").fadeIn('fast');
+	$("#ud4").fadeIn('fast');
+	$("#ud5").fadeIn('fast');
+
+	$(".ud_slide_previous").fadeIn('slow');
+});
+
 
 $("#logo").click(function(){
 	$("#logo").fadeOut('300');
