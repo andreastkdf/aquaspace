@@ -383,10 +383,8 @@ function closeSubTabs4(){
 }
 
 function show_comment1(){
+	$('.comment_tropoi').text(" Πρόκειται για μια ιδιαίτερα καταστροφική και σπάταλη μέθοδο. Στο πέρασμα της μηχανότρατας, τα οικοσυστήματα του βυθού “οργώνονται” και μία μεγάλη ποικιλία οργανισμών συνθλίβεται ή μα- ζεύεται στα τεράστια δίχτυα. Με αυτή τη μέθοδο, τα πολύ μικρά ή ανεπιθύμητα ψάρια πετιούνται πίσω στη θάλασσα μι- σοπεθαμένα ή νεκρά. Οι τράτες βυθού πετούν μεταξύ 30-70% (σε βάρος) των αλιευμάτων τους πίσω στη θάλασσα.");
 	$('.comment_tropoi').fadeIn('fast');
-	$('.tropoi_4').fadeOut('fast');
-	$('.tropoi_3').fadeOut('fast');
-	$('.tropoi_2').fadeOut('fast');
 	$('.tropoi_1').fadeIn('fast');
 	$('.mixano').css('filter', 'grayscale(0%)');
 	$('.grigri').css('filter', 'grayscale(100%)');
@@ -397,10 +395,7 @@ function show_comment1(){
 
 function show_comment2(){
 	$('.comment_tropoi').fadeIn('fast');
-	$('.tropoi_4').fadeOut('fast');
-	$('.tropoi_3').fadeOut('fast');
-	$('.tropoi_1').fadeOut('fast');
-	$('.tropoi_2').fadeIn('fast');
+	$('.comment_tropoi').text("Συχνά τοποθετούν τα δίχτυα τους γύρω από αντικείμενα που επιπλέουν στη θάλασσα ή ειδικά εργαλεία που βοηθάνε στη συγκέντρωση των ψαριών (FAD). Έτσι προσελκύουν διάφορα είδη, όπως τόνους, καρχαρίες, χελώνες και θαλάσσια θηλαστικά, που έρχονται αναζητώντας τροφή και καταφύγιο. Με αυτή τη μέθοδο αυξάνεται σημαντικά η πιθανότητα ανεπιθύμητης αλίευσης γόνου και άλλων θαλάσσιων ειδών.")
 	$('.mixano').css('filter', 'grayscale(100%)');
 	$('.grigri').css('filter', 'grayscale(0%)');
 	$('.pelagika').css('filter', 'grayscale(100%)');
@@ -408,11 +403,8 @@ function show_comment2(){
 }
 
 function show_comment3(){
+	$('.comment_tropoi').text('  Πιάνουν πολλά απειλούμενα είδη, όπως καρχαρίες, χελώνες, θαλάσσια θηλαστικά και πουλιά. Το ανεπιθύμητο αλίευμα μπορεί να μειωθεί με διάφορους τρόπους, όπως με τη χρήση κυκλικών αγκιστρίων ή την τοποθέτησή τους σε μεγαλύτερο βάθος.');
 	$('.comment_tropoi').fadeIn('fast');
-	$('.tropoi_4').fadeOut('fast');
-	$('.tropoi_1').fadeOut('fast');
-	$('.tropoi_2').fadeOut('fast');
-	$('.tropoi_3').fadeIn('fast');
 	$('.mixano').css('filter', 'grayscale(100%)');
 	$('.grigri').css('filter', 'grayscale(100%)');
 	$('.pelagika').css('filter', 'grayscale(0%)');
@@ -421,11 +413,8 @@ function show_comment3(){
 }
 
 function show_comment4(){
+	$('.comment_tropoi').text('Παράκτιο συρόμενο εργαλείο που απο- τελείται από ένα σάκο τράτας που σύρε- ται με βίντσι από σκάφος το οποίο έχει δεθεί στην ακτή. Η βιντζότρατα ψαρεύει πάνω από τα λιβάδια Ποσειδωνίας, ένα ευαίσθητο και προστατευόμενο ενδιαίτη- μα. Επίσης έχει πολλές απορρίψεις εμπορικών και μη ειδών, τα οποία βρί- σκονται κάτω από τα ελάχιστα επιτρεπό- μενα μεγέθη.');
 	$('.comment_tropoi').fadeIn('fast');
-	$('.tropoi_1').fadeOut('fast');
-	$('.tropoi_3').fadeOut('fast');
-	$('.tropoi_2').fadeOut('fast');
-	$('.tropoi_4').fadeIn('fast');
 	$('.mixano').css('filter', 'grayscale(100%)');
 	$('.grigri').css('filter', 'grayscale(100%)');
 	$('.pelagika').css('filter', 'grayscale(100%)');

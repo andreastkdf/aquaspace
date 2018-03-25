@@ -626,6 +626,7 @@ body {
 	width: 46%;
 	margin-left: 8%;
 	margin-top: 8%;
+	opacity: 0.2;
 }
 
 .here{
@@ -638,6 +639,7 @@ body {
 	margin-left: -130%;
 	margin-top: 8%;
 	display: none;
+	opacity: 0.2;
 }
 
 #p5{
