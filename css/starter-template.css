@@ -35,6 +35,18 @@ body {
 	width: 100%;
 }
 
+
+img#apopou {
+	padding: 0% 0% 0% 6%;
+	height: 49px;
+	margin-top: -1%;
+	margin-left: 2%;
+	position: absolute;
+	display: none;
+}
+
+
+
 #intro{
 	position: absolute;
 	z-index: 1;
@@ -350,11 +362,17 @@ body {
 
 .moretext{
 	display: none;
-	padding-left: 40%;
-	padding-top: 2%;
-	font-size: 24px;
+	padding-left: 42%;
+	font-size: 19px;
 	text-align: left;
 }
+
+.test.col-md-8 {
+    position: fixed;
+    padding-top: 25%;
+    padding-left: 18%;
+}
+
 
 .alieia{
 	padding: 5% 8% 0% 13%;
@@ -647,16 +665,16 @@ body {
 }
 
 .caption_diath {
-    width: 160%;
-    padding-right: 0%;
-    margin-left: 0%;
-    font-size: 25px;
+	width: 160%;
+	padding-right: 0%;
+	margin-left: 0%;
+	font-size: 25px;
 }
 
 .caption_2 {
-    padding-left: 16%;
-    position: fixed;
-    font-size: 24px;
+	padding-left: 16%;
+	position: fixed;
+	font-size: 24px;
 }
 
 .caption_3{
@@ -735,6 +753,6 @@ body {
 
 
 span.ok_button {
-    padding: 35% 0% 0% 48%;
-    position: absolute;
+	padding: 35% 0% 0% 48%;
+	position: absolute;
 }
