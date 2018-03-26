@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+  <title>AquaSpace</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="./css/starter-template.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans:600" rel="stylesheet">
+</head>
+
+<body>
+  <script type="text/javascript"> 
+    // loading
+    ;(function(){
+      function id(v){ return document.getElementById(v); }
+      function loadbar() {
+        var ovrl = id("overlay"),
+        prog = id("progress"),
+        stat = id("progstat"),
+        img = document.images,
+        c = 0,
+        tot = img.length;
+        if(tot == 0) return doneLoading();
+
+        function imgLoaded(){
+          c += 1;
+          var perc = ((100/tot*c) << 0) +"%";
+          prog.style.width = perc;
+          stat.innerHTML = perc;
+          if(c===tot) return doneLoading();
+        }
+        function doneLoading(){
+          ovrl.style.opacity = 0;
+          setTimeout(function(){ 
+            ovrl.style.display = "none";
+          }, 1200);
+        }
+        for(var i=0; i<tot; i++) {
+          var tImg     = new Image();
+          tImg.onload  = imgLoaded;
+          tImg.onerror = imgLoaded;
+          tImg.src     = img[i].src;
+        }    
+      }
+      document.addEventListener('DOMContentLoaded', loadbar, false);
+    }());
+  </script>
+
+  <!-- loading -->
+  <div id="overlay">
+    <div id="progstat"></div>
+    <div id="progress"></div>
+  </div>
+  <!-- end loading -->
+  <div class="container-fluid no-padding" >
+    <div class="credits">
+      <h2>CREDITS</h2><br><br>
+      Το έργο Aquaspace (Ecosystem Approach to making Space for Aquaculture) χρηματοδοτήθηκε από την Ευρωπαική Ένωση στο πλαίσιο του προγράμματος έρευνας και καινοτομίας Horizon 2020 με αριθμό χρηματοδότησης Nο 633476.<br><br>
+      <h4>Επιστημονική ομάδα:</h4>
+      Ιωάννης Καρακάσης<br>Παναγιώτης ∆. ∆ημητρίου<br>Ειρήνη Τσικοπούλου<br>Αντώνης Γερόπουλος<br> Ναυσικά Παπαγεωργίου<br><br>
+      <h4>Graphic Designer</h4>
+      Ιωάννα ∆ημητρίου<br><br>
+      <h4>Developer</h4>
+      Ανδρέας Κωστάκης
+
+      <div class="logos">
+        <img class="img-fluid logo_credit" src="./img/45_A.png" alt="Aquaspace Introduction">
+        <a href="./index.html"><img class="img-fluid logo_credit" src="./img/45_B.png" alt="Aquaspace Introduction"></a>
+        <img class="img-fluid logo_credit" src="./img/45_C.png" alt="Aquaspace Introduction">
+      </div>
+
+    </div>
+
+    <img class="img-fluid" id="intro-credits" src="./img/footer.png" alt="Aquaspace Introduction">
+  </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="./js/jquery.min.js"><\/script>')</script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="./js/ie10-viewport-bug-workaround.js"></script>
+      <script src="./js/jquery-3.2.1.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <script  src="./js/aquaspace.js"></script>
+    </body>
+    </html>

@@ -651,6 +651,14 @@ img#apopou {
 	overflow: inherit;
 }
 
+span.caption-slide {
+    padding-top: 44%;
+    margin-left: -75%;
+    position: absolute;
+    font-size: 28px;
+    width: 77%;
+}
+
 .ud_slide_previous{
 	position: fixed;
 	width: 46%;
@@ -755,4 +763,23 @@ img#apopou {
 span.ok_button {
 	padding: 35% 0% 0% 48%;
 	position: absolute;
+}
+
+#intro-credits {
+    margin: -27% 0px 0px;
+}
+
+.credits {
+    text-align: center;
+    width: 100%;
+    padding: 6% 25% 25% 25%;
+}
+
+.logo_credit{
+	margin: 0% 9% 0% 0%;
+}
+
+.logos {
+    margin-top: 7%;
+    margin-left: 5%;
 }
