@@ -4,7 +4,7 @@
 * HTML-CSS-JS : Andreas KOSTAKIS 
 * Graphic Design: Ioanna DIMITRIOU
 
-* requirements and more
+## Requirements and more
 
 Implemented for desktop browser at a 1920x1080 resolution (not responsive, special use case).
 
