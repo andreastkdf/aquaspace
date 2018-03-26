@@ -62,13 +62,19 @@ $(".ud_prev").click(function(){
 
 
 $("#logo").click(function(){
-	$("#logo").fadeOut('300');
-	$("#logo_small").fadeIn('200');
-	$("#intro").animate({margin:  '38% 0px 0px 0px'},3000, function(){
-		$("#intro").attr("src", "./img/footer.png");
-		$("#intro").css("position: absolute;");
-	});
-	$("#introMenu").fadeIn('200');
+	var url = window.location.pathname;
+	var filename = url.substring(url.lastIndexOf('/')+1);
+	if(filename === 'index.html'){
+	 myWindow = window.open("./app.html", "AquaSpace", "width=1920, height=1080");  // Opens a new window with correct dimensions
+	}else{
+		$("#logo").fadeOut('300');
+		$("#logo_small").fadeIn('200');
+		$("#intro").animate({margin:  '38% 0px 0px 0px'},3000, function(){
+			$("#intro").attr("src", "./img/footer.png");
+			$("#intro").css("position: absolute;");
+		});
+		$("#introMenu").fadeIn('200');
+	}
 });
 
 $('.carousel').carousel({
