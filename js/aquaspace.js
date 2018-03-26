@@ -64,7 +64,7 @@ $(".ud_prev").click(function(){
 $("#logo").click(function(){
 	var url = window.location.pathname;
 	var filename = url.substring(url.lastIndexOf('/')+1);
-	if(filename === 'index.html'){
+	if(filename !=== 'app.html'){
 	 myWindow = window.open("./app.html", "AquaSpace", "width=1920, height=1080");  // Opens a new window with correct dimensions
 	}else{
 		$("#logo").fadeOut('300');
