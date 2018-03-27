@@ -766,13 +766,14 @@ span.ok_button {
 }
 
 #intro-credits {
-    margin: -27% 0px 0px;
+    padding: 8% 0px 0px;
+    width: 100%;
 }
 
 .credits {
     text-align: center;
-    width: 100%;
-    padding: 6% 25% 25% 25%;
+    width: 71%;
+    padding: 3% 0% 0% 29%;
 }
 
 .logo_credit{
