@@ -65,7 +65,7 @@ $("#logo").click(function(){
 	var url = window.location.pathname;
 	var filename = url.substring(url.lastIndexOf('/')+1);
 	if(filename !== 'app.html'){
-	 myWindow = window.open("./app.html", "AquaSpace", "width=1920, height=1080");  // Opens a new window with correct dimensions
+	 myWindow = window.open("./app.html", "AquaSpace","width=1920, height=1080");  // Opens a new window with correct dimensions
 	}else{
 		$("#logo").fadeOut('300');
 		$("#logo_small").fadeIn('200');
@@ -111,6 +111,7 @@ var go_show_text=0;
 $(".go_button").click(function() {
 	if (go_show_text == 0){
 		$(".under_go").fadeIn('fast');
+		$(".continue").fadeIn('fast');
 		$("#apopou").fadeIn('fast');
 		go_show_text = 1;
 		return;
