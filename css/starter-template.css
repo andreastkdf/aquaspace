@@ -35,6 +35,17 @@ body {
 	width: 100%;
 }
 
+.info_first{
+	position: absolute;
+    z-index: 10;
+    margin: 2% 0% 0% 49%;
+}
+
+strong {
+    font-weight: bolder;
+    color: red;
+}
+
 
 img#apopou {
 	padding: 0% 0% 0% 6%;
@@ -787,3 +798,14 @@ span.ok_button {
 	margin-top: 7%;
 	margin-left: 5%;
 }
+
+
+.logosPres {
+    margin-top: 44%;
+    margin-left: 5%;
+    z-index: 1;
+    position: fixed;
+    width: 25%;
+    /* background-color: #ffffffde; */
+}
+
