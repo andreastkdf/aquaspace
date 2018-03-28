@@ -368,9 +368,9 @@ img#apopou {
 }
 
 .test.col-md-8 {
-    position: fixed;
-    padding-top: 25%;
-    padding-left: 18%;
+	position: fixed;
+	padding-top: 25%;
+	padding-left: 18%;
 }
 
 
@@ -652,11 +652,11 @@ img#apopou {
 }
 
 span.caption-slide {
-    padding-top: 44%;
-    margin-left: -75%;
-    position: absolute;
-    font-size: 28px;
-    width: 77%;
+	padding-top: 44%;
+	margin-left: -75%;
+	position: absolute;
+	font-size: 28px;
+	width: 77%;
 }
 
 .ud_slide_previous{
@@ -766,21 +766,24 @@ span.ok_button {
 }
 
 #intro-credits {
-    padding: 8% 0px 0px;
-    width: 100%;
+	padding: 8% 0px 0px;
+	width: 100%;
 }
 
 .credits {
-    text-align: center;
-    width: 71%;
-    padding: 3% 0% 0% 29%;
+	text-align: center;
+	width: 71%;
+	padding: 3% 0% 0% 29%;
 }
-
+.eu{
+	width: 67%;
+	margin-bottom: 5% !important;
+}
 .logo_credit{
 	margin: 0% 9% 0% 0%;
 }
 
 .logos {
-    margin-top: 7%;
-    margin-left: 5%;
+	margin-top: 7%;
+	margin-left: 5%;
 }
