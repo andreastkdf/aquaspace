@@ -67,7 +67,6 @@ $("#logo").click(function(){
 	if(filename !== 'app.html'){
 
 	 myWindow = window.open("./app.html", "AquaSpace","width=1920, height=1080, ");  // Opens a new window with correct dimensions
-	 myWindow = window.open("./app.html", "AquaSpace","width=1920, height=1080");  // Opens a new window with correct dimensions
 	}else{
 		$("#logo").fadeOut('300');
 		$("#logo_small").fadeIn('200');
@@ -76,7 +75,6 @@ $("#logo").click(function(){
 			$("#intro").css("position: absolute;");
 		});
 		$("#introMenu").fadeIn('200');
-	document.documentElement.webkitRequestFullscreen();
 	}
 });
 
