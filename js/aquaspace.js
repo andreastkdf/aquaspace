@@ -76,7 +76,7 @@ $("#logo").click(function(){
 			$("#intro").css("position: absolute;");
 		});
 		$("#introMenu").fadeIn('200');
-	document.documentElement.webkitRequestscreen();
+	document.documentElement.webkitRequestFullscreen();
 	}
 });
 
