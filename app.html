@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+  <title>AquaSpace</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="./css/starter-template.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans:600" rel="stylesheet">
+  <link rel="icon" href="./img/45_B.png">
+</head>
+
+<body>
+  <script type="text/javascript"> 
+    // loading
+    ;(function(){
+      function id(v){ return document.getElementById(v); }
+      function loadbar() {
+        var ovrl = id("overlay"),
+        prog = id("progress"),
+        stat = id("progstat"),
+        img = document.images,
+        c = 0,
+        tot = img.length;
+        if(tot == 0) return doneLoading();
+
+        function imgLoaded(){
+          c += 1;
+          var perc = ((100/tot*c) << 0) +"%";
+          prog.style.width = perc;
+          stat.innerHTML = perc;
+          if(c===tot) return doneLoading();
+        }
+        function doneLoading(){
+          ovrl.style.opacity = 0;
+          setTimeout(function(){ 
+            ovrl.style.display = "none";
+          }, 1200);
+        }
+        for(var i=0; i<tot; i++) {
+          var tImg     = new Image();
+          tImg.onload  = imgLoaded;
+          tImg.onerror = imgLoaded;
+          tImg.src     = img[i].src;
+        }    
+      }
+      document.addEventListener('DOMContentLoaded', loadbar, false);
+    }());
+  </script>
+
+
+
+  <!--   <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Navbar</a>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  -->
+  <!-- loading -->
+  <div id="overlay">
+    <div id="progstat"></div>
+    <div id="progress"></div>
+  </div>
+  <!-- end loading -->
+  <div class="container-fluid no-padding" >
+    <div class="start">ΜΠΟΡΕΙ ΤΟ ΘΑΛΑΣΣΙΟ ΠΕΡΙΒΑΛΛΟΝ ΝΑ<br> ΘΡΕΨΕΙ ΤΟΝ ΑΝΘΡΩΠΙΝΟ ΠΛΗΘΥΣΜΟ;
+     <br> <br><button type="button" class="btn btn-outline-secondary start_button">ΞΕΚΙΝΑ</button>
+   </div>
+   <a class="btn btn-warning go_button active">ΑΠΟ ΠΟΥ ΠΡΟΕΡΧΕΤΑΙ ΤΟ ΦΑΓΗΤΟ ΜΑΣ;
+    <!-- <img class="" id="apopou" src="./img/question.png"> -->
+    <br><span class="btn btn-secondary continue" style="background: none;color: #559a0d; display: none;">Συνέχεια</span>
+     <br><span class="under_go">Το χερσαίο περιβάλλον είναι περισσότερο<br>αξιοποιημένο ως προς την παραγωγή τροφής.<br><br>
+Το θαλάσσιο περιβάλλον μπορεί να παρέχει<br>τροφές υψηλής διατροφικής αξίας με υψηλότερους<br>ρυθμούς αύξησης από την αύξηση του ανθρώπινου<br>πληθυσμού.</span>
+   </a>
+   <div class="row ">
+    <div class="col-md-12">
+      <img class="img-fluid" id="intro" src="./img/welcome_intro.png" alt="Aquaspace Introduction" >
+      <img id="logo" src="./img/intro_logo.png">
+      <a href="./index.html"><img id="logo_small" src="./img/logo_small.png"></a>
+    </div>
+  </div>
+  <div class="row introMenu">
+    <div class="col-md-4">
+      <figure>
+        <img class="img-fluid problemsImg" src="./img/people.png">
+        <figcaption class="buttons">
+          <button href="#" type="button" class="btn btn-warning aquaButton rising">Αύξηση πληθυσμού της γης</button>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="col-md-4">
+      <figure>
+        <img class="img-fluid problemsImg"  src="./img/piges.png">
+        <figcaption class="buttons">
+          <button href="#" type="button" class="btn btn-warning aquaButton rising">Ανάγκη για πηγές τροφής</button>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="col-md-4">
+      <figure>
+        <img class="img-fluid problemsImg" src="./img/diathesi.png">
+        <figcaption class="buttons">
+          <button href="#" type="button" class="btn btn-warning aquaButton">Πρόβλημα η διάθεση της τροφής<br> στον καταναλωτή</button>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="row introMenuSlide">
+    <div class="col-md-4">
+      <div id="carouselExampleControls" class="carousel introMenuCar slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <figure class="d-block w-100" alt="First slide">
+              <img class="img-fluid problemsImg" src="./img/people.png">
+              <figcaption class="buttons">
+                <button type="button" class="btn btn-warning aquaButton">Αύξηση πληθυσμού της γης</button>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="carousel-item">
+            <figure class="d-block w-100" alt="Second slide">
+              <img class="img-fluid problemsImg" src="./img/piges.png">
+              <figcaption class="buttons">
+                <button type="button" class="btn btn-warning aquaButton">Ανάγκη για πηγές τροφής</button>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="carousel-item">
+            <figure class="d-block w-100" alt="Third slide">
+              <img class="img-fluid problemsImg" src="./img/diathesi.png">
+              <figcaption class="buttons">
+                <button type="button" class="btn btn-warning aquaButton">Πρόβλημα η διάθεση της τροφής<br> στον καταναλωτή</button>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6 aquaCaption" > 
+      <div id="textSlide0">
+        Ο πληθυσμός της γης εμφανίζει συνεχή αύξηση<br>
+        •Από 1 δις πριν από περίπου 200 χρόνια, πλέον ξεπερνάει τα 7 δις <br>
+        •Τα τελευταία χρόνια παρατηρείται μία μείωση του ρυθμού αύξησης του πληθυσμού,<br> ο οποίος είχε αγγίξει τα μέγιστα επίπεδα στα μέσα του 20ου αιώνα
+      </div>
+      <div  id="textSlide1">
+       Η αύξηση του πληθυσμού αναμένεται να προκαλέσει μεγαλύτερες ανάγκες για τροφη<br>•Υπολογίζεται ότι μέχρι το 2050 θα χρειαστεί μία αύξηση στην παραγωγή<br>τροφής κατά 70% για να καλυφθούν οι ανάγκες της ανθρωπότητας<br>•Η αύξηση αυτή θα προέλθει κυρίως από τον χερσαίο αγροτικό τομέα,<br>
+       αλλά και το θαλάσσιο περιβάλλον
+     </div>
+     <div id="textSlide2">
+       Η διάθεση της τροφής στον καταναλωτή αποτελεί ένα εξίσου σημαντικο<br>ζήτημα που χρίζει διευθέτησης και μελέτης για την αρτιότερη θρέψη του<br> ανθρώπινου πληθυσμού.
+     </div>
+     <span class="endIntro"><button type="button" class="btn btn-outline-success btn-lg">OK</button></span>
+   </div>
+ </div>
+</div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="./js/jquery.min.js"><\/script>')</script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="./js/ie10-viewport-bug-workaround.js"></script>
+      <script src="./js/jquery-3.2.1.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <script  src="./js/aquaspace.js"></script>
+    </body>
+    </html>

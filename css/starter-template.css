@@ -35,6 +35,17 @@ body {
 	width: 100%;
 }
 
+.info_first{
+	position: absolute;
+    z-index: 10;
+    margin: 2% 0% 0% 49%;
+}
+
+strong {
+    font-weight: bolder;
+    color: red;
+}
+
 
 img#apopou {
 	padding: 0% 0% 0% 6%;
@@ -177,7 +188,7 @@ img#apopou {
 	position: absolute;
 	padding-top: 2%;
 	height: 153% !important;
-	margin-top: 8%;
+	margin-top: 1%;
 	margin-left: -50% !important;
 	width: 100%;
 	text-align: left;
@@ -368,9 +379,9 @@ img#apopou {
 }
 
 .test.col-md-8 {
-    position: fixed;
-    padding-top: 25%;
-    padding-left: 18%;
+	position: fixed;
+	padding-top: 25%;
+	padding-left: 18%;
 }
 
 
@@ -652,11 +663,11 @@ img#apopou {
 }
 
 span.caption-slide {
-    padding-top: 44%;
-    margin-left: -75%;
-    position: absolute;
-    font-size: 28px;
-    width: 77%;
+	padding-top: 44%;
+	margin-left: -75%;
+	position: absolute;
+	font-size: 28px;
+	width: 77%;
 }
 
 .ud_slide_previous{
@@ -766,20 +777,35 @@ span.ok_button {
 }
 
 #intro-credits {
-    margin: -27% 0px 0px;
+	padding: 8% 0px 0px;
+	width: 100%;
 }
 
 .credits {
-    text-align: center;
-    width: 100%;
-    padding: 6% 25% 25% 25%;
+	text-align: center;
+	width: 71%;
+	padding: 3% 0% 0% 29%;
 }
-
+.eu{
+	width: 67%;
+	margin-bottom: 5% !important;
+}
 .logo_credit{
 	margin: 0% 9% 0% 0%;
 }
 
 .logos {
-    margin-top: 7%;
-    margin-left: 5%;
+	margin-top: 7%;
+	margin-left: 5%;
 }
+
+
+.logosPres {
+    margin-top: 44%;
+    margin-left: 5%;
+    z-index: 1;
+    position: fixed;
+    width: 25%;
+    /* background-color: #ffffffde; */
+}
+
