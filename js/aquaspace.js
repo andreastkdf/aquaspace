@@ -65,11 +65,9 @@ $("#logo").click(function(){
 	var url = window.location.pathname;
 	var filename = url.substring(url.lastIndexOf('/')+1);
 	if(filename !== 'app.html'){
-<<<<<<< HEAD
+
 	 myWindow = window.open("./app.html", "AquaSpace","width=1920, height=1080, ");  // Opens a new window with correct dimensions
-=======
 	 myWindow = window.open("./app.html", "AquaSpace","width=1920, height=1080");  // Opens a new window with correct dimensions
->>>>>>> 04c6a9bfdc93b566642af048e7791e6828fe2501
 	}else{
 		$("#logo").fadeOut('300');
 		$("#logo_small").fadeIn('200');
@@ -78,10 +76,7 @@ $("#logo").click(function(){
 			$("#intro").css("position: absolute;");
 		});
 		$("#introMenu").fadeIn('200');
-<<<<<<< HEAD
-	document.documentElement.webkitRequestFullscreen();
-=======
->>>>>>> 04c6a9bfdc93b566642af048e7791e6828fe2501
+	document.documentElement.webkitRequestscreen();
 	}
 });
 
