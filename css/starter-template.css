@@ -691,9 +691,9 @@ span.caption-slide {
 }
 
 .caption_2 {
-	padding-left: 16%;
-	position: fixed;
-	font-size: 24px;
+    padding-left: 11.1%;
+    position: fixed;
+    font-size: 24px;
 }
 
 .caption_3{
@@ -787,11 +787,11 @@ span.ok_button {
 	padding: 3% 0% 0% 29%;
 }
 .eu{
-	width: 67%;
+	width: 76%;
 	margin-bottom: 5% !important;
 }
 .logo_credit{
-	margin: 0% 9% 0% 0%;
+	margin: 0% 7% 0% 0%;
 }
 
 .logos {

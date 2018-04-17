@@ -1,0 +1,509 @@
+{
+  "pageIndex": 0,
+  "pageSize": 1,
+  "totalCount": 1,
+  "items": [
+    {
+      "text": "EUI Homepage",
+      "homepageDestination": [
+        "EUI homepage"
+      ],
+      "carouselSlideshowImages": [
+        {
+          "type": "imageCarouselSlideshow",
+          "value": {
+            "imageCarousel": {
+              "asset": {
+                "sys": {
+                  "id": "daf4f2e9-6208-4894-9438-0f52d91a44a8",
+                  "uri": "/Images-WebUnit/carousel-doctoralprogramme-summer2.jpg",
+                  "projectId": "euiWebsite",
+                  "contentTypeId": "image",
+                  "dataFormat": "asset",
+                  "language": "en-GB",
+                  "metadata": {
+                  },
+                  "properties": {
+                    "filename": "carousel-doctoralprogramme-summer2.jpg",
+                    "fileSize": 55999,
+                    "fileId": "daf4f2e9-6208-4894-9438-0f52d91a44a8",
+                    "width": 940,
+                    "height": 335
+                  },
+                  "version": {
+                    "createdBy": "fgaggero",
+                    "created": "2017-09-22T09:59:16.690122+01:00",
+                    "modifiedBy": "fgaggero",
+                    "modified": "2017-09-22T09:59:16.690122+01:00",
+                    "publishedBy": "ServicesUser",
+                    "published": "2017-09-22T10:00:22.7996496+01:00",
+                    "versionNo": "1.0"
+                  }
+                },
+                "title": "carousel-doctoralprogramme-summer2",
+                "description": null,
+                "altText": "carousel-doctoralprogramme-summer2",
+                "entryTitle": "carousel-doctoralprogramme-summer2"
+              },
+              "caption": "HEC Summer School"
+            },
+            "description": "HEC Summer School",
+            "link": "https://www.eui.eu/DepartmentsAndCentres/HistoryAndCivilization/SummerSchool/Index.aspx",
+            "published": false
+          }
+        },
+        {
+          "type": "imageCarouselSlideshow",
+          "value": {
+            "imageCarousel": {
+              "asset": {
+                "sys": {
+                  "id": "b295702c-21fd-494f-9319-de49dc78c3fd",
+                  "uri": "/Images-WebUnit/carousel-global.jpg",
+                  "projectId": "euiWebsite",
+                  "contentTypeId": "image",
+                  "dataFormat": "asset",
+                  "language": "en-GB",
+                  "metadata": {
+                  },
+                  "properties": {
+                    "filename": "carousel-global.jpg",
+                    "fileSize": 66357,
+                    "fileId": "b295702c-21fd-494f-9319-de49dc78c3fd",
+                    "width": 940,
+                    "height": 335
+                  },
+                  "version": {
+                    "createdBy": "nbarrett",
+                    "created": "2017-09-22T09:59:18.2682288+01:00",
+                    "modifiedBy": "nbarrett",
+                    "modified": "2017-09-22T09:59:18.2682288+01:00",
+                    "publishedBy": "ServicesUser",
+                    "published": "2017-09-22T10:00:25.9558766+01:00",
+                    "versionNo": "1.0"
+                  }
+                },
+                "title": "carousel-global",
+                "description": null,
+                "altText": "carousel-global",
+                "entryTitle": "carousel-global"
+              },
+              "caption": "14th Migration Summer School"
+            },
+            "description": "14th Migration Summer School",
+            "link": "http://www.migrationpolicycentre.eu/event/14th-migration-summer-school/#Lectures",
+            "published": false
+          }
+        },
+        {
+          "type": "imageCarouselSlideshow",
+          "value": {
+            "imageCarousel": {
+              "asset": {
+                "sys": {
+                  "id": "daf4f2e9-6208-4894-9438-0f52d91a44a8",
+                  "uri": "/Images-WebUnit/carousel-doctoralprogramme-summer2.jpg",
+                  "projectId": "euiWebsite",
+                  "contentTypeId": "image",
+                  "dataFormat": "asset",
+                  "language": "en-GB",
+                  "metadata": {
+                  },
+                  "properties": {
+                    "filename": "carousel-doctoralprogramme-summer2.jpg",
+                    "fileSize": 55999,
+                    "fileId": "daf4f2e9-6208-4894-9438-0f52d91a44a8",
+                    "width": 940,
+                    "height": 335
+                  },
+                  "version": {
+                    "createdBy": "fgaggero",
+                    "created": "2017-09-22T09:59:16.690122+01:00",
+                    "modifiedBy": "fgaggero",
+                    "modified": "2017-09-22T09:59:16.690122+01:00",
+                    "publishedBy": "ServicesUser",
+                    "published": "2017-09-22T10:00:22.7996496+01:00",
+                    "versionNo": "1.0"
+                  }
+                },
+                "title": "carousel-doctoralprogramme-summer2",
+                "description": null,
+                "altText": "carousel-doctoralprogramme-summer2",
+                "entryTitle": "carousel-doctoralprogramme-summer2"
+              },
+              "caption": "dgsdg sgsgsfg "
+            },
+            "description": "My Eui Experience",
+            "link": "https://www.facebook.com/hashtag/myeuiexperience",
+            "published": false
+          }
+        },
+        {
+          "type": "imageCarouselSlideshow",
+          "value": {
+            "imageCarousel": {
+              "asset": {
+                "sys": {
+                  "id": "b295702c-21fd-494f-9319-de49dc78c3fd",
+                  "uri": "/Images-WebUnit/carousel-global.jpg",
+                  "projectId": "euiWebsite",
+                  "contentTypeId": "image",
+                  "dataFormat": "asset",
+                  "language": "en-GB",
+                  "metadata": {
+                  },
+                  "properties": {
+                    "filename": "carousel-global.jpg",
+                    "fileSize": 66357,
+                    "fileId": "b295702c-21fd-494f-9319-de49dc78c3fd",
+                    "width": 940,
+                    "height": 335
+                  },
+                  "version": {
+                    "createdBy": "nbarrett",
+                    "created": "2017-09-22T09:59:18.2682288+01:00",
+                    "modifiedBy": "nbarrett",
+                    "modified": "2017-09-22T09:59:18.2682288+01:00",
+                    "publishedBy": "ServicesUser",
+                    "published": "2017-09-22T10:00:25.9558766+01:00",
+                    "versionNo": "1.0"
+                  }
+                },
+                "title": "carousel-global",
+                "description": null,
+                "altText": "carousel-global",
+                "entryTitle": "carousel-global"
+              },
+              "caption": "aaaaa"
+            },
+            "description": "CALL FOR PAPERS: 2nd Annual Graduate Conference",
+            "link": "https://www.eui.eu/Research/HistoricalArchivesOfEU/AlcideDeGasperiResearchCentre/News/2017/12-11-Call-for-Papers-2nd-annual-Graduate-Conference",
+            "published": false
+          }
+        },
+        {
+          "type": "imageCarouselSlideshow",
+          "value": {
+            "imageCarousel": {
+              "asset": {
+                "sys": {
+                  "id": "daf4f2e9-6208-4894-9438-0f52d91a44a8",
+                  "uri": "/Images-WebUnit/carousel-doctoralprogramme-summer2.jpg",
+                  "projectId": "euiWebsite",
+                  "contentTypeId": "image",
+                  "dataFormat": "asset",
+                  "language": "en-GB",
+                  "metadata": {
+                  },
+                  "properties": {
+                    "filename": "carousel-doctoralprogramme-summer2.jpg",
+                    "fileSize": 55999,
+                    "fileId": "daf4f2e9-6208-4894-9438-0f52d91a44a8",
+                    "width": 940,
+                    "height": 335
+                  },
+                  "version": {
+                    "createdBy": "fgaggero",
+                    "created": "2017-09-22T09:59:16.690122+01:00",
+                    "modifiedBy": "fgaggero",
+                    "modified": "2017-09-22T09:59:16.690122+01:00",
+                    "publishedBy": "ServicesUser",
+                    "published": "2017-09-22T10:00:22.7996496+01:00",
+                    "versionNo": "1.0"
+                  }
+                },
+                "title": "carousel-doctoralprogramme-summer2",
+                "description": null,
+                "altText": "carousel-doctoralprogramme-summer2",
+                "entryTitle": "carousel-doctoralprogramme-summer2"
+              },
+              "caption": "aaaaaaa"
+            },
+            "description": "© European Union 2018 - European Parliament",
+            "link": "https://www.eui.eu/events/detail?eventid=148843",
+            "published": false
+          }
+        },
+        {
+          "type": "imageCarouselSlideshow",
+          "value": {
+            "imageCarousel": {
+              "asset": {
+                "sys": {
+                  "id": "59c84e7c-2de9-4334-a5be-1c6ec13aa8c2",
+                  "uri": "/Images/STG/Badia.jpg",
+                  "projectId": "euiWebsite",
+                  "contentTypeId": "image",
+                  "dataFormat": "asset",
+                  "language": "en-GB",
+                  "metadata": {
+                  },
+                  "properties": {
+                    "filename": "Badia.jpg",
+                    "fileSize": 598698,
+                    "fileId": "59c84e7c-2de9-4334-a5be-1c6ec13aa8c2",
+                    "width": 2000,
+                    "height": 1333
+                  },
+                  "version": {
+                    "createdBy": "ehallida",
+                    "created": "2017-09-13T13:14:57.3780849+01:00",
+                    "modifiedBy": "ServicesUser",
+                    "modified": "2017-09-13T13:14:57.6749346+01:00",
+                    "publishedBy": "ServicesUser",
+                    "published": "2017-09-13T13:14:59.753185+01:00",
+                    "versionNo": "1.0"
+                  }
+                },
+                "title": "Badia",
+                "description": null,
+                "altText": "Badia",
+                "entryTitle": "Badia"
+              },
+              "caption": "badia"
+            },
+            "description": "rwar",
+            "link": "https://apps.eui.eu/webservices",
+            "published": false
+          }
+        }
+      ],
+      "composer": [
+        {
+          "type": "carouselLeftMenu",
+          "value": {
+            "title": "Study",
+            "image": {
+              "asset": {
+                "sys": {
+                  "id": "2fdba212-6d81-4d98-953b-680c7697fab4",
+                  "uri": "/Images-WebUnit/Home/Study2.jpg",
+                  "projectId": "euiWebsite",
+                  "contentTypeId": "image",
+                  "dataFormat": "asset",
+                  "language": "en-GB",
+                  "metadata": {
+                  },
+                  "properties": {
+                    "filename": "Study2.jpg",
+                    "fileSize": 142444,
+                    "fileId": "2fdba212-6d81-4d98-953b-680c7697fab4",
+                    "width": 940,
+                    "height": 335
+                  },
+                  "version": {
+                    "createdBy": "ciomei",
+                    "created": "2017-09-22T09:59:20.4088855+01:00",
+                    "modifiedBy": "ciomei",
+                    "modified": "2017-09-22T09:59:20.4088855+01:00",
+                    "publishedBy": "ServicesUser",
+                    "published": "2017-09-22T10:00:28.0809308+01:00",
+                    "versionNo": "1.0"
+                  }
+                },
+                "title": "Study2",
+                "description": null,
+                "altText": "Study2",
+                "entryTitle": "Study2"
+              },
+              "caption": "study image"
+            },
+            "markup": "<h4>Europe's research institute for</h4>\n<ul>\n<li><a href=\"/DepartmentsAndCentres/Economics/Index.aspx\" title=\"Department of Economics\"><strong>Economics</strong></a></li>\n<li><a href=\"/DepartmentsAndCentres/HistoryAndCivilization/Index.aspx\" title=\"Department of History and Civilization\"><strong>History and Civilization</strong></a></li>\n<li><a href=\"/DepartmentsAndCentres/Law/Index.aspx\" title=\"Department of Law\"><strong>Law</strong></a></li>\n<li><a href=\"/DepartmentsAndCentres/PoliticalAndSocialSciences/Index.aspx\" title=\"Department of Political and Social Sciences\"><strong>Political and Social Sciences</strong></a></li>\n</ul>"
+          }
+        },
+        {
+          "type": "carouselLeftMenu",
+          "value": {
+            "title": "Research",
+            "image": {
+              "asset": {
+                "sys": {
+                  "id": "adc87ad6-5914-44a9-b5ed-53fa38c19b2a",
+                  "uri": "/Images-WebUnit/Home/Research.jpg",
+                  "projectId": "euiWebsite",
+                  "contentTypeId": "image",
+                  "dataFormat": "asset",
+                  "language": "en-GB",
+                  "metadata": {
+                  },
+                  "properties": {
+                    "filename": "Research.jpg",
+                    "fileSize": 277571,
+                    "fileId": "adc87ad6-5914-44a9-b5ed-53fa38c19b2a",
+                    "width": 940,
+                    "height": 335
+                  },
+                  "version": {
+                    "createdBy": "ciomei",
+                    "created": "2017-09-22T09:59:21.0338598+01:00",
+                    "modifiedBy": "ciomei",
+                    "modified": "2017-09-22T09:59:21.0338598+01:00",
+                    "publishedBy": "ServicesUser",
+                    "published": "2017-09-22T10:00:28.7531041+01:00",
+                    "versionNo": "1.0"
+                  }
+                },
+                "title": "Research",
+                "description": null,
+                "altText": "Research",
+                "entryTitle": "Research"
+              },
+              "caption": "research image"
+            },
+            "markup": "<h4><a href=\"/Research/Index.aspx\" title=\"Research\">High-level research</a>&nbsp;in an international and stimulating environment</h4>\n<ul>\n<li><strong><a href=\"/Research/ResearchThemes.aspx\" title=\"Research Themes\">Research themes</a></strong></li>\n<li><strong><a href=\"/Research/ResearchProjectsAtoZ.aspx\" title=\"Research Projects A to Z\">Research projects</a></strong><strong><a href=\"/Research/EUIPublications/Index.aspx\" title=\"Publications at the EUI\">▸ Publications</a></strong></li>\n<li><strong><a href=\"http://cadmus.eui.eu/\" title=\"Cadmus\">Cadmus, the EUI Research Repository</a></strong></li>\n<li><strong><a href=\"/Research/Library/Index.aspx\" title=\"Europe's social science research library\">Library</a></strong></li>\n<li><strong><a href=\"/Research/HistoricalArchivesOfEU/Index.aspx\" title=\"Historical Archives of the European Union\">Historical Archives of the EU</a></strong></li>\n<li><a href=\"/ProgrammesAndFellowships/AcademicCareersObservatory/Index.aspx\" title=\"Academic Careers Observatory\"><strong>Academic Careers Observatory</strong></a></li>\n</ul>"
+          }
+        },
+        {
+          "type": "carouselLeftMenu",
+          "value": {
+            "title": "Training",
+            "image": {
+              "asset": {
+                "sys": {
+                  "id": "2484e983-ad08-47ae-9d8b-acfa8130b108",
+                  "uri": "/Images-WebUnit/Home/Train.jpg",
+                  "projectId": "euiWebsite",
+                  "contentTypeId": "image",
+                  "dataFormat": "asset",
+                  "language": "en-GB",
+                  "metadata": {
+                  },
+                  "properties": {
+                    "filename": "Train.jpg",
+                    "fileSize": 222944,
+                    "fileId": "2484e983-ad08-47ae-9d8b-acfa8130b108",
+                    "width": 940,
+                    "height": 335
+                  },
+                  "version": {
+                    "createdBy": "ciomei",
+                    "created": "2017-09-22T09:59:21.6588686+01:00",
+                    "modifiedBy": "ciomei",
+                    "modified": "2017-09-22T09:59:21.6588686+01:00",
+                    "publishedBy": "ServicesUser",
+                    "published": "2017-09-22T10:00:29.6280821+01:00",
+                    "versionNo": "1.0"
+                  }
+                },
+                "title": "Train",
+                "description": null,
+                "altText": "Train",
+                "entryTitle": "Train"
+              },
+              "caption": "training"
+            },
+            "markup": "<h4>Furthering your academic and professional expertise</h4>\n<ul>\n<li><a href=\"/Train/AcademicTraining.aspx\" title=\"Academic Training\"><strong>Academic training</strong></a></li>\n<li><a href=\"/Train/ExecutiveTraining.aspx\" title=\"Executive Training\"><strong>Executive training</strong></a></li>\n<li><a href=\"/Train/SummerSchools.aspx\" title=\"Summer Schools\"><strong>Summer schools</strong></a></li>\n</ul>"
+          }
+        },
+        {
+          "type": "carouselLeftMenu",
+          "value": {
+            "title": "Debate",
+            "image": {
+              "asset": {
+                "sys": {
+                  "id": "fdf3832d-5c1b-4ca5-8a75-3564cecc951e",
+                  "uri": "/Images-WebUnit/Home/Debate2.jpg",
+                  "projectId": "euiWebsite",
+                  "contentTypeId": "image",
+                  "dataFormat": "asset",
+                  "language": "en-GB",
+                  "metadata": {
+                  },
+                  "properties": {
+                    "filename": "Debate2.jpg",
+                    "fileSize": 174110,
+                    "fileId": "fdf3832d-5c1b-4ca5-8a75-3564cecc951e",
+                    "width": 940,
+                    "height": 335
+                  },
+                  "version": {
+                    "createdBy": "ciomei",
+                    "created": "2017-09-22T09:59:22.2527027+01:00",
+                    "modifiedBy": "ciomei",
+                    "modified": "2017-09-22T09:59:22.2527027+01:00",
+                    "publishedBy": "ServicesUser",
+                    "published": "2017-09-22T10:00:30.4402925+01:00",
+                    "versionNo": "1.0"
+                  }
+                },
+                "title": "Debate2",
+                "description": null,
+                "altText": "Debate2",
+                "entryTitle": "Debate2"
+              },
+              "caption": "Debate"
+            },
+            "markup": "<h4>Exchange and discussions of ideas and experiences</h4>\n<ul>\n<li><a href=\"http://stateoftheunion.eui.eu/\" title=\"The State of the Union\"><strong>The State of the Union</strong></a></li>\n<li><a href=\"/SeminarsAndEvents/Index.aspx\" title=\"seminars and events\"><strong>Seminars and Events</strong></a></li>\n<li><a href=\"http://debate.eudo.eu/\" title=\"EUDO Debate\"><strong>EUDO Debate</strong></a></li>\n<li><strong><a href=\"http://blogs.eui.eu/maxweberprogramme/\" title=\"Max Weber Blog\">Max Weber Blog</a></strong></li>\n<li><strong><a href=\"http://gender.eui.eu/\" title=\"Gender Project\">Gender Project</a></strong></li>\n</ul>"
+          }
+        },
+        {
+          "type": "carouselLeftMenu",
+          "value": {
+            "title": "Apply",
+            "image": {
+              "asset": {
+                "sys": {
+                  "id": "0cd63a88-0f3d-4491-bbd4-8e86a2d4b3a8",
+                  "uri": "/Images-WebUnit/DoctoralProgramme/homepageapply.jpg",
+                  "projectId": "euiWebsite",
+                  "contentTypeId": "image",
+                  "dataFormat": "asset",
+                  "language": "en-GB",
+                  "metadata": {
+                  },
+                  "properties": {
+                    "filename": "homepageapply.jpg",
+                    "fileSize": 332648,
+                    "fileId": "0cd63a88-0f3d-4491-bbd4-8e86a2d4b3a8",
+                    "width": 940,
+                    "height": 335
+                  },
+                  "version": {
+                    "createdBy": "ciomei",
+                    "created": "2017-09-22T09:59:23.3619984+01:00",
+                    "modifiedBy": "ciomei",
+                    "modified": "2017-09-22T09:59:23.3619984+01:00",
+                    "publishedBy": "ServicesUser",
+                    "published": "2017-09-22T10:00:31.6434025+01:00",
+                    "versionNo": "1.0"
+                  }
+                },
+                "title": "homepage_apply",
+                "description": null,
+                "altText": "homepage_apply",
+                "entryTitle": "homepage_apply"
+              },
+              "caption": "homepage apply"
+            },
+            "markup": "<ul>\n<li><strong><a href=\"/ServicesAndAdmin/AcademicService/DoctoralProgramme/Index.aspx\" title=\"Doctoral Programme\">Ph.D. with Grants</a></strong></li>\n<li><strong><a href=\"/DepartmentsAndCentres/Law/MasterOfLaws/LL.M.-Programme.aspx\" title=\"LL.M. Programme in Comparative, European and International Laws\">LL.M.</a></strong></li>\n<li><a href=\"/ProgrammesAndFellowships/Fellowships.aspx\" title=\"Fellowships\"><strong>Fellowships</strong></a></li>\n<li><a href=\"/ProgrammesAndFellowships/SummerSchools.aspx\" title=\"Summer Schools\"><strong>Summer Schools</strong></a></li>\n</ul>"
+          }
+        }
+      ],
+      "entryTitle": "EUI Homepage",
+      "sys": {
+        "id": "984f52be-ceb3-4d59-8df1-55086dba1c93",
+        "uri": "/api/delivery/projects/euiWebsite/entries/984f52be-ceb3-4d59-8df1-55086dba1c93",
+        "projectId": "euiWebsite",
+        "contentTypeId": "homepageCarrousel",
+        "dataFormat": "entry",
+        "language": "en-GB",
+        "metadata": {
+        },
+        "properties": {
+          "versionStatus": "Published"
+        },
+        "version": {
+          "createdBy": "akostaki",
+          "created": "2018-03-14T17:13:32.9322819Z",
+          "modifiedBy": "akostaki",
+          "modified": "2018-03-27T15:26:38.526262Z",
+          "publishedBy": "akostaki",
+          "published": "2018-03-27T15:27:01.961685Z",
+          "versionNo": "43.0"
+        },
+        "owner": "akostaki"
+      }
+    }
+  ]
+}

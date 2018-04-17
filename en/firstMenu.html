@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+  <title>Aquaspace</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/starter-template.css" rel="stylesheet">
+  <link rel="icon" href="../img/45_B.png">
+</head>
+
+<body>
+  <script type="text/javascript"> 
+    // loading
+    ;(function(){
+      function id(v){ return document.getElementById(v); }
+      function loadbar() {
+        var ovrl = id("overlay"),
+        prog = id("progress"),
+        stat = id("progstat"),
+        img = document.images,
+        c = 0,
+        tot = img.length;
+        if(tot == 0) return doneLoading();
+
+        function imgLoaded(){
+          c += 1;
+          var perc = ((100/tot*c) << 0) +"%";
+          prog.style.width = perc;
+          stat.innerHTML = perc;
+          if(c===tot) return doneLoading();
+        }
+        function doneLoading(){
+          ovrl.style.opacity = 0;
+          setTimeout(function(){ 
+            ovrl.style.display = "none";
+          }, 1200);
+        }
+        for(var i=0; i<tot; i++) {
+          var tImg     = new Image();
+          tImg.onload  = imgLoaded;
+          tImg.onerror = imgLoaded;
+          tImg.src     = img[i].src;
+        }    
+      }
+      document.addEventListener('DOMContentLoaded', loadbar, false);
+    }());
+  </script>
+  <div id="overlay">
+    <div id="progstat"></div>
+    <div id="progress"></div>
+  </div>
+  <div class="container-fluid no-padding">
+    <!-- under construction -->
+    <!-- <img style="margin: 25% 50%;" src="../img/ajax-loader.gif"> -->
+    <div class="row">
+      <div class="col-md-12">
+        <a href="./index.html"><img id="logo_small" style="display: block;" src="../img/logo_small.png"></a>
+      </div>
+    </div>
+    <div class="row categories">
+      <div class="offset-md-1 col-md-2">
+        <button type="button" id="xersaies_container" class="btn btn-outline-secondary farm categories-button">
+          terrestrial<br>livestock farms<img class="categories-img" id="xersaies" src="../img/question.png">
+        </button>
+      </div>
+      <div class="offset-md-1 col-md-2">
+        <button href="#" type="button" id="alieia_container" class="btn btn-outline-secondary categories-button">
+          <br>fisheries<img class="categories-img" id="alieia" src="../img/key.png">
+        </button>
+      </div>
+      <div class="offset-md-1 col-md-2">
+        <button href="#" type="button" id="udato_container" class="btn btn-outline-secondary categories-button">
+          <div  class="bam ml11" ><br>
+           <span class="text-wrapper">
+            <span class="line line1" style="display: none;"></span>
+            <span class="letters" style="display: none;">aquaculture</span>
+          </span>
+        </div>
+        <img class="categories-img" id="udato" src="../img/key.png">
+      </button>
+    </div>
+  </div>
+  <a href="./credits.html">
+    <div class="row exodos">
+      <button type="button" class="btn btn-warning aquaButton">END</button>
+    </div>
+  </a>
+
+
+
+
+  <div id="aqua-tabs" style="display: none;">
+    <div class="tab">
+      <button class="tablinks London" onclick="openCity(event, 'London')" id="defaultOpen">Terrestrial livestock farms</button>
+      <button class="tablinks Paris" onclick="openCity(event, 'Paris')" style="display:none">Fisheries<br><br></button>
+      <button class="tablinks Tokyo" onclick="openCity(event, 'Tokyo')" style="display:none">?</button>
+    </div>
+    <div id="London" class="tabcontent">
+      <span  class="topright" onclick="closeTabs1(event)">
+        <img src="../img/tick.png">
+      </span>
+      <div class="row sub-categories">
+        <div class="col-md-2">
+          <img class="categories-img animals" id="cow" onclick="changeImageCow()" src="../img/cow_shadow.png">
+        </div>
+        <div class="offset-md-1 col-md-2">
+         <img class="categories-img animals" id="chicken" onclick="changeImageChicken()" src="../img/chicken_shadow.png">
+       </div>
+       <div class="offset-md-1 col-md-2">
+        <img class="categories-img animals" id="pig" onclick="changeImagePig()" src="../img/pig_shadow.png">
+      </div>
+      <div class="offset-md-1 col-md-2">
+        <img class="categories-img animals" id="sheep" onclick="changeImageSheep()" src="../img/sheep_shadow.png">
+      </div>
+    </div>
+    <div class="row more">
+      <button type="button" class="btn btn-warning aquaButton" id="showText" >More</button>
+    </div>
+    <div class="row moretext">
+      Issues and weaknesses of livestock farming<br>•Requires large quantities of water<br>•Restriction of space<br>•Conditions of captivity and bad animal welfare<br>•Management of farming wastes<br>•Cannot meet the ever increasing needs for animal protein, from meat and other products.
+    </div>
+  </div>
+  <div id="Paris" class="tabcontent">
+   <span class="ok_button close_Paris" onclick="closeTabs2()" style="display: none;">
+    <button type="button" class="btn btn-outline-success btn-lg">OK</button>
+  </span>
+  <div class="row sub-categories">
+    <div class="col-md-2">
+      <button href="#" type="button" id="koina_al" class="btn btn-outline-secondary tab-categories-button">
+       Common fish<br>caches in Greece<img class="categories-img" id="koina_img" src="../img/question.png">
+     </button>
+   </div>
+   <div class="offset-md-1 col-md-2">
+    <button href="#" type="button" id="tropoi_al" class="btn btn-outline-secondary tab-categories-button">
+      Fish farming<img class="categories-img" id='tropoi_img' src="../img/key.png">
+    </button>
+  </div>
+  <div class="offset-md-1 col-md-2">
+    <button href="#" type="button" id="diath_al" class="btn btn-outline-secondary tab-categories-button">
+      Making fish<br>available<br>to consumers<img class="categories-img" id='diath_img' src="../img/key.png">
+    </button>
+  </div>
+  <div class="offset-md-1 col-md-2">
+    <button href="#" type="button" id="sun_al" class="btn btn-outline-secondary tab-categories-button">
+      Advantages &<br>disadvantages<img class="categories-img" id="sun_img" src="../img/key.png">
+    </button>
+  </div>
+</div>
+</div>
+<div id="Tokyo" class="tabcontent">
+  <span class="ok_button closeTabs3" style="display: none;" onclick="closeTabs3()">
+    <button type="button" class="btn btn-outline-success btn-lg">OK</button>
+  </span>
+  <div class="row sub-categories">
+    <div class="col-md-2">
+      <button href="#" type="button" id="ektref_ud" class="btn btn-outline-secondary tab-categories-button">
+        Commonly farmed<br>fish<img class="categories-img" id="ektref_img" src="../img/question.png">
+      </button>
+    </div>
+    <div class="offset-md-1 col-md-2">
+      <button href="#" type="button" id="diadikasia_ud" class="btn btn-outline-secondary tab-categories-button">
+        Fishing methods<img class="categories-img" id='diadikasia_img' src="../img/key.png">
+      </button>
+    </div>
+    <div class="offset-md-1 col-md-2">
+      <button href="#" type="button" id="diath_ud" class="btn btn-outline-secondary tab-categories-button">
+        Making fish<br>available<br>to consumers<img class="categories-img" id='diath_ud_img' src="../img/key.png">
+      </button>
+    </div>
+    <div class="offset-md-1 col-md-2">
+      <button href="#" type="button" id="sun_ud" class="btn btn-outline-secondary tab-categories-button">
+        Advantages &<br>disadvantages<img class="categories-img" id="sun_ud_img" src="../img/key.png">
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+<div id="alieia-tabs" style="display: none;">
+  <div class="tab alieia">
+    <button class="tablinks sub-alieia Koina" onclick="openCity(event, 'Koina')" id="defaultOpen">Common fish<br>caches in Greece</button>
+    <button class="tablinks sub-alieia Tropoi" onclick="openCity(event, 'Tropoi')" style="display:none">Fishing<br>methods<br><br></button>
+    <button class="tablinks sub-alieia Diathesi" onclick="openCity(event, 'Diathesi')" style="display:none">Making fish available<br>to consumers</button>
+    <button class="tablinks sub-alieia Pleon" onclick="openCity(event, 'Pleon')" style="display:none">Advantages <br>&<br>disadvantages</button>
+  </div>
+  <div id="Koina" class="tabcontent">
+    <span  class="topright" onclick="closeSubTabs1()">
+      <img src="../img/tick.png">
+    </span>
+    <div class="row sub-categories">
+      <div class="col-md-2">
+        <img class="fish-img fish" src="../img/fish.png" onclick="this.src=('../img/gauros_en.png')"> 
+      </div>
+      <div class="col-md-2">
+        <img id="fish2" class="fish-img fish" src="../img/fish_less_dark.png" onclick="this.src=('../img/lithrini_en.png')">
+        <!-- <span id="fish2" class="text-fish">λυθρίνι</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish3" class="fish-img fish" src="../img/fish_medium.png" onclick="this.src=('../img/safridi_en.png')">
+        <!-- <span id="fish3" class="text-fish text-fish3">σαφρίδι</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish9" class="fish-img fish" src="../img/fish_dark.png" onclick="this.src=('../img/gauros_en.png')">
+        <!-- <span id="fish9" class="text-fish">φρίσσα</span> -->
+      </div>
+    </div>
+    <div class="row sub-categories">
+      <div class="col-md-2">
+        <img id="fish4" class="fish-img fish" src="../img/fish_dark.png" onclick="this.src=('../img/gopa_en.png')">
+        <!-- <span id="fish4" class="text-fish">γόπα</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish5" class="fish-img fish" src="../img/fish_medium.png" onclick="this.src=('../img/koutsomoura_en.png')">
+        <!-- <span id="fish5" class="text-fish">κουτσομούρα</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish6" class="fish-img fish" src="../img/fish.png" onclick="this.src=('../img/barbouni_en.png')">
+        <!-- <span id="fish6" class="text-fish">μπαρμπούνι</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish7" class="fish-img fish" src="../img/fish_dark.png" onclick="this.src=('../img/ksifias_en.png')">
+        <!-- <span id="fish7" class="text-fish">ξιφίας</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish8" class="fish-img fish" src="../img/fish.png" onclick="this.src=('../img/glwssa_en.png')">
+        <!-- <span id="fish8" class="text-fish">γλώσσα</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish10" class="fish-img fish" src="../img/fish.png" onclick="this.src=('../img/tonos_en.png')">
+        <!-- <span id="fish10" class="text-fish text-fish10">τόνος</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish11" class="fish-img fish" src="../img/fish_large.png" onclick="this.src=('../img/kolios_en.png')">
+        <!-- <span id="fish11" class="text-fish text-fish11">κολιός</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish12" class="fish-img fish" src="../img/fish_less_dark.png" onclick="this.src=('../img/bakaliaros_en.png')">
+        <!-- <span id="fish12" class="text-fish">μπακαλιάρος</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish13" class="fish-img fish" src="../img/fish_less_dark.png" onclick="this.src=('../img/rofos_en.png')">
+        <!-- <span id="fish13" class="text-fish">ροφός</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish14" class="fish-img fish" src="../img/fish.png" onclick="this.src=('../img/sargos_en.png')">
+        <!-- <span id="fish14" class="text-fish">σαργός</span> -->
+      </div>
+      <div class="col-md-2">
+        <img id="fish15" class="fish-img fish" src="../img/fish_large.png" onclick="this.src=('../img/xtapodi_en.png')">
+        <!-- <span id="fish15" class="text-fish text-fish15">χταπόδι</span> -->
+      </div>
+    </div>
+  </div>
+  <div id="Tropoi" class="tabcontent">
+    <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
+    <span class="topright" onclick="closeSubTabs2()">
+      <img src="../img/tick.png">
+    </span>
+    <div class="row categories_tropoi">
+      <div class="col-md-2 mixano">
+        <span>
+         Bottom Trawling<img class="tropoi_img" src="../img/tropoi_a.png">
+         <span class="aquaButton show_comment" id="show_comment1" onclick="show_comment1()">More</span>
+       </span>
+     </div>
+     <div class="offset-md-1 col-md-2 grigri">
+      <span>
+        Purse seine<img class="tropoi_img" src="../img/tropoi_b.png">
+        <span class="aquaButton show_comment" id="show_comment2" onclick="show_comment2()">More</span>
+      </span>
+    </div>
+    <div class="offset-md-1 col-md-2 pelagika">
+      <span> 
+        Drifting longlines<img class="tropoi_img" src="../img/tropoi_c.png">
+        <span class="aquaButton show_comment" id="show_comment3" onclick="show_comment3()">More</span>
+      </span>
+    </div>
+    <div class="offset-md-1 col-md-2 vinzi">
+      <span >
+        Boat seine<img class="tropoi_img" src="../img/tropoi_d.png">
+        <span class="aquaButton show_comment" id="show_comment4" onclick="show_comment4()">More</span>
+      </span>
+    </div>
+    <span class="comment_tropoi tropoi_1" style="display: none;">
+     This is a particularly disastrous and wasteful method. During trawling, the sea bottom is dredged and a great number of organisms get crushed to death or accidently caught in the nets. Small or noncommercial fish discarded into the sea injured or dead. Bottom trawlers dispose 30-70% (by weight) of their catches back to the sea.
+   </span>
+ </div>
+</div>
+<div id="Diathesi" class="tabcontent">
+  <span class="topright" onclick="closeSubTabs3()">
+    <img src="../img/tick.png">
+  </span>
+  <div class="row categories_tropoi">
+    <div class="col-md-2">
+      <span>
+       Fish<br>landing<img class="tropoi_img" src="../img/diath_a.png">
+     </span>
+   </div>
+   <div class="offset-md-1 col-md-2">
+    <span>
+      Central fish auction site<img class="tropoi_img" src="../img/diath_b.png">
+    </span>
+  </div>
+  <div class="offset-md-1 col-md-2">
+    <span> 
+      Local<br>fish market<img class="tropoi_img" src="../img/diath_c.png">
+    </span>
+  </div>
+  <div class="offset-md-1 col-md-2">
+    <span>
+      Consumer’s<br>plate<img class="tropoi_img" src="../img/diath_d.png">
+    </span>
+  </div>
+  <div class="test col-md-8">The fish are usually landed at the port, transported to a central fish auction site, and then distributed to local stores ultimately ending up on our plate.</div>
+</div>
+</div>
+<div id="Pleon" class="tabcontent">
+  <!-- <span onclick="this.parentElement.style.display='none'" class="topright">x</span> -->
+  <span class="topright" onclick="closeSubTabs4()">
+    <img src="../img/tick.png">
+  </span>
+  <div class="row categories_pleon">
+    <div class="offset-md-3 col-md-2">
+      <img class="pleon_img" src="../img/plus.png">
+      <div class="row">
+        <h1 class="pleon_title">Advantages</h1>
+      </div>
+      <div class="row">
+        <h3 class="pleon_title pleon_subtitle">
+          •Freshness<br>•Large variety of species<br>•Direct contact with the seller
+        </h3>
+      </div>
+    </div>
+    <div class="offset-md-2 col-md-2">
+      <img class="pleon_img" src="../img/minus.png">
+      <div class="row">
+        <h1 class="pleon_title">Disadvantages</h1>
+      </div>
+      <div class="row">
+        <h3 class="pleon_title pleon_subtitle">
+          •Reduced wild fish<br>stocks due to overfishing<br>•Negative impact of fishing methods<br>also on non-commercial species<br>•Negative impact of fishing methods on the environment
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div id="udato-tabs" style="display: none;">
+  <div class="tab alieia">
+    <button class="tablinks sub-ud Koina_ek" onclick="openCity(event, 'Koina_ek')" id="defaultOpen">Commonly<br>farmed<br>fish</button>
+    <button class="tablinks sub-ud Diadikasia" onclick="openCity(event, 'Diadikasia')" style="display:none">Fish<br>farming<br>process</button>
+    <button class="tablinks sub-ud Diathesi_ud" onclick="openCity(event, 'Diathesi_ud')" style="display:none">Making fish available<br>to consumers</button>
+    <button class="tablinks sub-ud Pleon_ud" onclick="openCity(event, 'Pleon_ud')" style="display:none">Advantages<br>&<br>Disadvantages</button>
+  </div>
+  <div id="Koina_ek" class="tabcontent">
+   <span  class="topright" onclick="closeSubUdTabs1()">
+     <img src="../img/tick.png">
+   </span>
+   <div class="row ">
+    <div id="udato_fish1" class="sub_udato_fish">
+      <img class="udato_fish" src="../img/fish_large.png" onclick="this.src=('../img/fagkri_en.png')">
+    </div>
+    <div id="udato_fish2" class="sub_udato_fish">
+      <img class="udato_fish" src="../img/fish.png" onclick="this.src=('../img/mitaki_en.png')">
+    </div>
+  </div>
+  <div class="row second_row">
+    <div id="udato_fish3" class="sub_udato_fish">
+      <img class="udato_fish" src="../img/fish_dark.png" onclick="this.src=('../img/milokopi_en.png')">
+    </div>
+    <div id="udato_fish4" class="sub_udato_fish">
+      <img class="udato_fish" src="../img/fish_dark.png" onclick="this.src=('../img/tsipoura_en.png')">
+    </div>
+  </div>
+  <div class="row third_row">
+    <button type="button" class="btn btn-warning aquaButton udato_button" id="ud_showText" onclick="ud_show_text()">More
+    </button>
+  </div>
+  <div class="row forth_row">
+    <div id="udato_fish5" class="sub_udato_fish">
+      <img class="udato_fish" src="../img/fish.png" onclick="this.src=('../img/lavraki_en.png')">
+    </div>
+    <div id="udato_fish6" class="sub_udato_fish">
+      <img class="udato_fish" src="../img/fish_less_dark.png" onclick="this.src=('../img/sinagrida_en.png')">
+    </div>
+  </div>
+  <div class="row ud_more_text">The commonly farmed species, about 95% of total production, in Greece are sea bream and sea bass. Recently, there is an effort to increase the number of famed species with new species such as pagrus, dentex etc. Especially, Red porgy is a popular dish in many restaurants, though it is a fairly expensive fish. Its successful farming will lead to the reduction in both its price and the pressure on its wild stocks.</div>
+</div>
+<div id="Diadikasia" class="tabcontent">
+  <span  class="topright" onclick="closeSubUdTabs2()">
+   <img src="../img/tick.png">
+ </span>
+ <div class="row ud_slide">
+  <div class="col-md-12">
+    <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+     <div class="carousel-inner here">
+      <div class="carousel-item active">
+        <div class="d-block w-100" alt="First slide">
+          <img class="ud_slide_img" src="../img/diadi_slide1_en.png">
+          <img class="ud_slide_next" id="ud1" src="../img/diadi_slide2.png">
+          <span class="caption-slide">1. Broodstock is kept in tanks under controlled conditions in small groups of with a specific sex ratio.</span>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-block w-100" alt="Second slide">
+          <img class="ud_slide_img" src="../img/diadi_slide2.png">
+          <img class="ud_slide_previous" id="p1" src="../img/diadi_slide1_en.png">
+          <img class="ud_slide_next" id="ud2" src="../img/diadi_slide3.png">
+          <span class="caption-slide">2. Male fish release sperm and female fish eggs. The fertilization of the eggs takes place in the water. A few hours after the fertilization the fish eggs begin to hatch.</span>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-block w-100" alt="Third slide">
+          <img class="ud_slide_img" src="../img/diadi_slide3.png">
+          <img class="ud_slide_previous" id="p2" src="../img/diadi_slide2.png">
+          <img class="ud_slide_next" id="ud3" src="../img/diadi_slide4.png">
+          <span class="caption-slide">3. The juveniles pass into the ongrowing phase.</span>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-block w-100" alt="Fourth slide">
+          <img class="ud_slide_img" src="../img/diadi_slide4.png">
+          <img class="ud_slide_previous" id="p3" src="../img/diadi_slide3.png">
+          <img class="ud_slide_next" id="ud4" src="../img/diadi_slide5.png">
+          <span class="caption-slide">4. They are transported to fish cages at the sea where the main farming stage begins.</span>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-block w-100" alt="Fifth slide">
+          <img class="ud_slide_img" src="../img/diadi_slide5.png">
+          <img class="ud_slide_previous" id="p4" src="../img/diadi_slide4.png">
+          <img class="ud_slide_next" id="ud5" src="../img/diadi_slide6.png">
+          <span class="caption-slide">5. When they reach the commercial size they are harvested using nets.</span>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-block w-100 .sixth" alt="Sixth slide">
+          <img class="ud_slide_previous" id="p5" src="../img/diadi_slide5.png">
+          <img class="ud_slide_img" src="../img/diadi_slide6.png">
+          <span class="caption-slide">6. Packaging and storage on ice.</span>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev ud_prev" style="margin-left: -12%; margin-top: 10%; display: none;" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next ud_next" style="margin-right: 14%; margin-top: 10%;" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+</div>
+<div id="Diathesi_ud" class="tabcontent">
+  <span  class="topright" onclick="closeSubUdTabs3()">
+   <img src="../img/tick.png">
+ </span>
+ <div class="row sub-categories">
+  <div class="col-md-2">
+    <figure>
+      <img class="categories_img_diath" src="../img/poiotikos_en.png">
+      <figcaption class="caption_diath" style="font-size:24px; margin-left: 6.1%; position:fixed;
+      ">
+      The stored fish pass through strict<br>quality controls following specific<br>certification systems.
+    </figcaption>
+  </figure>
+</div>
+<div class="col-md-2">
+  <figure>
+    <img class="categories_img_diath poikilia" src="../img/poikilia.png">
+    <figcaption class="caption_diath caption_2">
+      The fish are processed to a<br>variety of products:<br>•Whole fish<br>•Fillet<br>•Slice
+    </figcaption>
+  </figure>
+</div>
+<div class="offset-md-2 col-md-2">
+  <figure>
+    <img class="categories_img_diath" src="../img/diadikasia.png">
+    <figcaption class="caption_diath caption_3">
+      They are then transported to markets and sold<br>to the consumer
+    </figcaption>
+  </figure>
+</div>
+
+</div>
+</div>
+<div id="Pleon_ud" class="tabcontent">
+  <span  class="topright" onclick="closeSubUdTabs4()">
+   <img src="../img/tick.png">
+ </span>
+ <div class="row categories_pleon">
+  <div class="offset-md-3 col-md-2">
+    <img class="pleon_img" src="../img/plus.png">
+    <div class="row">
+      <h1 class="pleon_title">Advantages</h1>
+    </div>
+    <div class="row">
+      <h3 class="pleon_title pleon_subtitle">
+        •No need for freshwateŕ.<br>•Production of animal protein with lower ecological cost.<br>•Reduction of over-fishing of natural populations.<br>
+        •Provides employment opportunities in remote and rural areas.<br>•Expansion of production on isolated coasts and small islands
+      </h3>
+    </div>
+
+  </div>
+  <div class="offset-md-2 col-md-2">
+    <img class="pleon_img" src="../img/minus.png">
+    <div class="row">
+      <h1 class="pleon_title">Disadvantages</h1>
+    </div>
+    <div class="row">
+      <h3 class="pleon_title pleon_subtitle">
+        •Small diversity of farmed species.<br>•Conflicts with other uses in the coastal zone (i.e. tourism).<br>•Use of non-commercial wild fish captures to produce food for farmed fish (fishmeal).
+      </h3>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../js/jquery.min.js"><\/script>')</script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="../js/ie10-viewport-bug-workaround.js"></script>
+      <script src="../js/jquery-3.2.1.min.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <script  src="../js/aquaspace_en.js"></script>
+      <script  src="../js/tabs.js"></script>
+    </body>
+    </html>
