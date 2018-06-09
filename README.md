@@ -1,5 +1,5 @@
 # Aquaspace web project (Demo)
-## Private Web Application
+## Desktop Web Application - An interactive presentation of AquaSpace Project
 
 * HTML-CSS-JS : Andreas KOSTAKIS 
 * Graphic Design: Ioanna DIMITRIOU
